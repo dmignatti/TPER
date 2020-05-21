@@ -1,0 +1,161 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="dsValori" targetNamespace="http://www.tempuri.org/dsValori.xsd" xmlns:mstns="http://www.tempuri.org/dsValori.xsd" xmlns="http://www.tempuri.org/dsValori.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="dsValori" msdata:IsDataSet="true" msdata:Locale="it-IT">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="LavoriStradaliCausali">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdCausale" type="xs:int" />
+              <xs:element name="Causale" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="LavoriStradaliEsecutori">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdEsecutore" type="xs:int" />
+              <xs:element name="Esecutore" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="LavoriStradaliTipi">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdTipo" type="xs:int" />
+              <xs:element name="Tipo" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="LavoriStradaliToponimi">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdToponimo" type="xs:int" />
+              <xs:element name="Toponimo" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="LavoriStradaliZone">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdZona" type="xs:int" />
+              <xs:element name="Zona" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="StradarioBologna">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Codice" type="xs:int" />
+              <xs:element name="Nome" type="xs:string" minOccurs="0" />
+              <xs:element name="cod_comune" type="xs:int" />
+              <xs:element name="cod_prov" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="LavoriStradali">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Nome" type="xs:string" minOccurs="0" />
+              <xs:element name="Tipo" type="xs:string" minOccurs="0" />
+              <xs:element name="Causale" type="xs:string" minOccurs="0" />
+              <xs:element name="Esecutore" type="xs:string" minOccurs="0" />
+              <xs:element name="Zona" type="xs:string" minOccurs="0" />
+              <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+              <xs:element name="IdZona" type="xs:string" minOccurs="0" />
+              <xs:element name="Titolo" type="xs:string" minOccurs="0" />
+              <xs:element name="Testo" type="xs:string" minOccurs="0" />
+              <xs:element name="File" msdata:DataType="System.Guid, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" minOccurs="0" />
+              <xs:element name="Ext" type="xs:string" minOccurs="0" />
+              <xs:element name="DataInizio" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DataFine" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="IdTipo" type="xs:int" minOccurs="0" />
+              <xs:element name="IdCausale" type="xs:int" minOccurs="0" />
+              <xs:element name="IdEsecutore" type="xs:int" minOccurs="0" />
+              <xs:element name="IdVia" type="xs:int" />
+              <xs:element name="Ordinanza" type="xs:string" minOccurs="0" />
+              <xs:element name="PaliNuovi" type="xs:int" minOccurs="0" />
+              <xs:element name="PaliEliminati" type="xs:int" minOccurs="0" />
+              <xs:element name="PaliRipristinati" type="xs:int" minOccurs="0" />
+              <xs:element name="CartelliNuovi" type="xs:int" minOccurs="0" />
+              <xs:element name="CartelliEliminati" type="xs:int" minOccurs="0" />
+              <xs:element name="CartelliRipristinati" type="xs:int" minOccurs="0" />
+              <xs:element name="StalliONuovi" type="xs:int" minOccurs="0" />
+              <xs:element name="StalliOEliminati" type="xs:int" minOccurs="0" />
+              <xs:element name="StalliORipristinati" type="xs:int" minOccurs="0" />
+              <xs:element name="StalliRRNuovi" type="xs:int" minOccurs="0" />
+              <xs:element name="StalliRREliminati" type="xs:int" minOccurs="0" />
+              <xs:element name="StalliRRRipristinati" type="xs:int" minOccurs="0" />
+              <xs:element name="ResidentiNuovi" type="xs:int" minOccurs="0" />
+              <xs:element name="ResidentiEliminati" type="xs:int" minOccurs="0" />
+              <xs:element name="ResidentiRipristinati" type="xs:int" minOccurs="0" />
+              <xs:element name="StalliMotoNuovi" type="xs:int" minOccurs="0" />
+              <xs:element name="StalliMotoEliminati" type="xs:int" minOccurs="0" />
+              <xs:element name="StalliMotoRipristinati" type="xs:int" minOccurs="0" />
+              <xs:element name="FittoniNuovi" type="xs:int" minOccurs="0" />
+              <xs:element name="FittoniEliminati" type="xs:int" minOccurs="0" />
+              <xs:element name="FittoniRipristinati" type="xs:int" minOccurs="0" />
+              <xs:element name="FormaggioniNuovi" type="xs:int" minOccurs="0" />
+              <xs:element name="FormaggioniEliminati" type="xs:int" minOccurs="0" />
+              <xs:element name="FormaggioniRipristinati" type="xs:int" minOccurs="0" />
+              <xs:element name="PaliExNovo" type="xs:int" minOccurs="0" />
+              <xs:element name="CartelliExNovo" type="xs:int" minOccurs="0" />
+              <xs:element name="StalliOExNovo" type="xs:int" minOccurs="0" />
+              <xs:element name="StalliRRExNovo" type="xs:int" minOccurs="0" />
+              <xs:element name="ResidentiExNovo" type="xs:int" minOccurs="0" />
+              <xs:element name="StalliMotoExNovo" type="xs:int" minOccurs="0" />
+              <xs:element name="FittoniExNovo" type="xs:int" minOccurs="0" />
+              <xs:element name="FormaggioniExNovo" type="xs:int" minOccurs="0" />
+              <xs:element name="CarsharingNuovi" type="xs:int" minOccurs="0" />
+              <xs:element name="CarsharingEliminati" type="xs:int" minOccurs="0" />
+              <xs:element name="CarsharingRipristinati" type="xs:int" minOccurs="0" />
+              <xs:element name="CarsharingExNovo" type="xs:int" minOccurs="0" />
+              <xs:element name="DisabiliNuovi" type="xs:int" minOccurs="0" />
+              <xs:element name="DisabiliEliminati" type="xs:int" minOccurs="0" />
+              <xs:element name="DisabiliRipristinati" type="xs:int" minOccurs="0" />
+              <xs:element name="DisabiliExNovo" type="xs:int" minOccurs="0" />
+              <xs:element name="GenericiNuovi" type="xs:int" minOccurs="0" />
+              <xs:element name="GenericiEliminati" type="xs:int" minOccurs="0" />
+              <xs:element name="GenericiRipristinati" type="xs:int" minOccurs="0" />
+              <xs:element name="GenericiExNovo" type="xs:int" minOccurs="0" />
+              <xs:element name="DiscoOrarioNuovi" type="xs:int" minOccurs="0" />
+              <xs:element name="DiscoOrarioEliminati" type="xs:int" minOccurs="0" />
+              <xs:element name="DiscoOrarioRipristinati" type="xs:int" minOccurs="0" />
+              <xs:element name="DiscoOrarioExNovo" type="xs:int" minOccurs="0" />
+              <xs:element name="CaricoScaricoNuovi" type="xs:int" minOccurs="0" />
+              <xs:element name="CaricoScaricoEliminati" type="xs:int" minOccurs="0" />
+              <xs:element name="CaricoScaricoRipristinati" type="xs:int" minOccurs="0" />
+              <xs:element name="CaricoScaricoExNovo" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:LavoriStradaliCausali" />
+      <xs:field xpath="mstns:IdCausale" />
+    </xs:unique>
+    <xs:unique name="LavoriStradaliEsecutori_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:LavoriStradaliEsecutori" />
+      <xs:field xpath="mstns:IdEsecutore" />
+    </xs:unique>
+    <xs:unique name="LavoriStradaliTipi_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:LavoriStradaliTipi" />
+      <xs:field xpath="mstns:IdTipo" />
+    </xs:unique>
+    <xs:unique name="LavoriStradaliToponimi_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:LavoriStradaliToponimi" />
+      <xs:field xpath="mstns:IdToponimo" />
+    </xs:unique>
+    <xs:unique name="LavoriStradaliZone_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:LavoriStradaliZone" />
+      <xs:field xpath="mstns:IdZona" />
+    </xs:unique>
+    <xs:unique name="StradarioBologna_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:StradarioBologna" />
+      <xs:field xpath="mstns:Codice" />
+      <xs:field xpath="mstns:cod_comune" />
+      <xs:field xpath="mstns:cod_prov" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

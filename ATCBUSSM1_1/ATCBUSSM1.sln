@@ -1,0 +1,19 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ATCBUSSM1", "http://localhost/ATCBUSSM1_1/ATCBUSSM1.vbproj", "{55EB52FD-7375-47A9-A508-BFE6A228FD87}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{55EB52FD-7375-47A9-A508-BFE6A228FD87}.Debug|Default.ActiveCfg = Debug|.NET
+		{55EB52FD-7375-47A9-A508-BFE6A228FD87}.Debug|Default.Build.0 = Debug|.NET
+		{55EB52FD-7375-47A9-A508-BFE6A228FD87}.Release|Default.ActiveCfg = Release|.NET
+		{55EB52FD-7375-47A9-A508-BFE6A228FD87}.Release|Default.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

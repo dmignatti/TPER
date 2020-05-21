@@ -1,0 +1,37 @@
+<?xml version="1.0" standalone="yes" ?>
+<xs:schema id="dsTURNI" targetNamespace="http://www.tempuri.org/dsTURNI.xsd" xmlns:mstns="http://www.tempuri.org/dsTURNI.xsd"
+	xmlns="http://www.tempuri.org/dsTURNI.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+	<xs:element name="dsTURNI" msdata:IsDataSet="true" msdata:Locale="it-IT">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="TB_CAMBI_TURNO">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="TITIPL" type="xs:string" />
+							<xs:element name="TIDTIP" type="xs:string" />
+							<xs:element name="TIGRUA" type="xs:string" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="AMTIP00F">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="TITIPL" type="xs:string" />
+							<xs:element name="TIDTIP" type="xs:string" />
+							<xs:element name="TIGRUA" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="dsTURNIKey2" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:TB_CAMBI_TURNO" />
+			<xs:field xpath="mstns:TITIPL" />
+		</xs:unique>
+		<xs:key name="dsTURNIKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:AMTIP00F" />
+			<xs:field xpath="mstns:TITIPL" />
+		</xs:key>
+	</xs:element>
+</xs:schema>

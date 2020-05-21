@@ -1,0 +1,61 @@
+<?xml version="1.0" standalone="yes" ?>
+<xs:schema id="DsMancataTimbratura" targetNamespace="http://www.tempuri.org/DsMancataTimbratura.xsd"
+	xmlns:mstns="http://www.tempuri.org/DsMancataTimbratura.xsd" xmlns="http://www.tempuri.org/DsMancataTimbratura.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"
+	attributeFormDefault="qualified" elementFormDefault="qualified">
+	<xs:element name="DsMancataTimbratura" msdata:IsDataSet="true" msdata:Locale="it-IT">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="TPER_Accertatori">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="NomeCognome" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Accertatori_MancataTimbratura">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Approvatore" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="ID" msdata:DataType="System.Guid, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+								type="xs:string" />
+							<xs:element name="AccertatoreId" type="xs:int" minOccurs="0" />
+							<xs:element name="Data" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="Entrata1" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="Uscita1" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="Entrata2" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="Uscita2" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="DalleOre1" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+							<xs:element name="AlleOre1" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+							<xs:element name="DalleOre2" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+							<xs:element name="AlleOre2" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+							<xs:element name="DalleMin1" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+							<xs:element name="AlleMin1" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+							<xs:element name="DalleMin2" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+							<xs:element name="AlleMin2" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+							<xs:element name="StatoApprovazione" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="DataApprovazione" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="ApprovatoDa" type="xs:int" minOccurs="0" />
+							<xs:element name="CreatedOn" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="CognomeNome" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="DataInserimento" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="StatoMancataTimbratura" type="xs:int" minOccurs="0" />
+							<xs:element name="CreatedBy" type="xs:string" minOccurs="0" />
+							<xs:element name="ModifiedOn" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="ModifiedBy" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="Constraint1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:TPER_Accertatori" />
+			<xs:field xpath="mstns:ID" />
+		</xs:unique>
+		<xs:key name="DsMancataTimbraturaKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Accertatori_MancataTimbratura" />
+			<xs:field xpath="mstns:ID" />
+		</xs:key>
+	</xs:element>
+</xs:schema>

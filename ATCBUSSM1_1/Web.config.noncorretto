@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+	<appSettings>
+		<add key="ApplicationName" value="ATCBussm" />
+		<add key="Thumbnail.Height" value="30" />
+		<add key="Thumbnail.Width" value="40" />
+		<add key="GiorniStorico" value="3" />
+		<add key="ConnectionString" value="initial catalog=TPER_SETTORESOSTATest;user id=UtenteBussm;integrated security=false;data source=appsql;connect timeout=5;password=pwdbussm" />
+		<add key="ConnectionStringDepositerie" value="user id=UtenteDepositeria;password=pwddepositeria;initial catalog=DepositeriaATC;data source=appsql;Connect Timeout=5" />
+		<add key="con.ConnectionString" value="user id=UtenteBussm;data source=appsql;persist security info=True;initial catalog=TPER_SETTORESOSTATest;password=pwdbussm" />
+    
+		<add key="conBigl.ConnectionString" value="packet size=4096;user id=bigl;data source=appsqlclu;persist security info=True;initial catalog=biglietterie;password=bigl" />	
+    <!-- <add key="conAS400.ConnectionString" value="Provider=MSDASQL.1;Password=TFRRITA400;Persist Security Info=True;User ID=TFRRITA400;Data Source=AS400;Initial Catalog=ATC01" />-->
+    <add key="conAS400.ConnectionString" value="DSN=ASATC01;UID=TFRRITA400;PWD=TFRRITA400" /> 
+		<add key="conDep.ConnectionString" value="user id=UtenteDepositeria;password=pwddepositeria;initial catalog=DepositeriaATC;data source=appsql;Connect Timeout=5" />
+		<add key="ConnDatiAs400" value="packet size=4096;user id=UtenteBussm;data source=appsql;persist security info=True;initial catalog=TPER_SETTORESOSTATest;password=pwdbussm" />
+		<add key="SelectAccertatori" value="SELECT DISTINCT M.AMMATR AS MATRICOLA, @SelectedDate AS DATA, Case When T.PTCTUR IS NULL Then 0 Else T.PTCTUR End AS TURNO, A.ANCGNO AS COGNOMENOME, Case When V.PGGRUA IS NULL Then M.amgrua Else V.pggrua End AS CODICEGRUPPO, Case When V.DEGRUA IS NULL Then D.tadesc Else V.degrua End AS gruppo FROM VESTI110.AMAMT00F M LEFT JOIN VESTI110.AMTAB00F D ON Trim(M.AMGRUA) = Trim(D.TACODE) LEFT JOIN AMPE.APANA00F A ON M.AMMATR = A.ANMATR LEFT JOIN (SELECT PTMATR, PTCTUR, PTFLSM FROM VESTI110.AMPTG00F WHERE PTGGGG = @Day AND PTMMGG = @Month AND PTAAGG = @Year AND PTMATR &lt;> 0 AND PTCTUR IN (SELECT PGCTUR FROM VESTI110.AMPEG00F WHERE PGGGGG = @Day AND PGMMGG = @Month AND PGAAGG = @Year)) T ON T.PTMATR = M.AMMATR LEFT JOIN (SELECT P.PGPERC, D1.TADESC AS DEPERC, P.PGGRUA, D2.TADESC AS DEGRUA, P.PGTIPL, T1.TIDTIP, P.PGCTUR, P.PGNOTA, T1.TISASS FROM VESTI110.AMPEG00F P LEFT JOIN VESTI110.AMTIP00F T1 ON P.PGTIPL = T1.TITIPL LEFT JOIN VESTI110.AMTAB00F D1 ON TRIM(P.PGPERC) = TRIM(D1.TACODE) LEFT JOIN VESTI110.AMTAB00F D2 ON TRIM(P.PGGRUA) = TRIM(D2.TACODE) WHERE @Year = P.PGAAGG AND @Month = P.PGMMGG AND @Day = P.PGGGGG AND P.PGCTUR &lt;> 0 AND D1.TACODT = 'PER' AND D2.TACODT = 'GRU') V ON V.PGCTUR = T.PTCTUR WHERE M.AMAAGG = @Year AND M.AMMMGG = @Month AND D.TACODT = 'GRU'" />
+		<add key="SelectAccertatoriTmp" value="SELECT DISTINCT M.AMMATR AS MATRICOLA, @SelectedDate AS DATA, Case When T.PTCTUR IS NULL Then 0 Else T.PTCTUR End AS TURNO, A.ANCGNO AS COGNOMENOME, Case When V.PGGRUA IS NULL Then M.amgrua Else V.pggrua End AS CODICEGRUPPO, Case When V.DEGRUA IS NULL Then D.tadesc Else V.degrua End AS gruppo FROM INNOTEST.AMAMT00F M LEFT JOIN INNOTEST.AMTAB00F D ON Trim(M.AMGRUA) = Trim(D.TACODE) LEFT JOIN INNOTEST.APANA00F A ON M.AMMATR = A.ANMATR LEFT JOIN (SELECT PTMATR, PTCTUR, PTFLSM FROM INNOTEST.AMPTG00F WHERE PTGGGG = @Day AND PTMMGG = @Month AND PTAAGG = @Year AND PTMATR &lt;> 0 AND PTCTUR IN (SELECT PGCTUR FROM INNOTEST.AMPEG00F WHERE PGGGGG = @Day AND PGMMGG = @Month AND PGAAGG = @Year)) T ON T.PTMATR = M.AMMATR LEFT JOIN (SELECT P.PGPERC, D1.TADESC AS DEPERC, P.PGGRUA, D2.TADESC AS DEGRUA, P.PGTIPL, T1.TIDTIP, P.PGCTUR, P.PGNOTA, T1.TISASS FROM INNOTEST.AMPEG00F P LEFT JOIN INNOTEST.AMTIP00F T1 ON P.PGTIPL = T1.TITIPL LEFT JOIN INNOTEST.AMTAB00F D1 ON TRIM(P.PGPERC) = TRIM(D1.TACODE) LEFT JOIN INNOTEST.AMTAB00F D2 ON TRIM(P.PGGRUA) = TRIM(D2.TACODE) WHERE @Year = P.PGAAGG AND @Month = P.PGMMGG AND @Day = P.PGGGGG AND P.PGCTUR &lt;> 0 AND D1.TACODT = 'PER' AND D2.TACODT = 'GRU') V ON V.PGCTUR = T.PTCTUR WHERE M.AMAAGG = @Year AND M.AMMMGG = @Month AND D.TACODT = 'GRU'" />
+		<add key="SelectTurni" value="SELECT DISTINCT T.PTCTUR AS TURNO, @SelectedDate AS DATA, V.PGPERC AS PERCORSO, V.DEPERC AS DESCRIZIONEPERCORSO, V.PGTIPL AS CODICETIPOLOGIA, V.TIDTIP AS TIPOLOGIATURNO, V.TISASS AS ORDINEASSEGNAMENTO, V.PGNOTA AS NOTA FROM (SELECT PTCTUR FROM VESTI110.AMPTG00F WHERE PTGGGG = @Day AND PTMMGG = @Month AND PTAAGG = @Year AND PTMATR &lt;> 0 AND PTCTUR &lt;> 0) T, (SELECT P.PGPERC, D.TADESC AS DEPERC, P.PGCTUR, P.PGNOTA, P.PGTIPL, T.TIDTIP, T.TISASS FROM VESTI110.AMPEG00F P LEFT JOIN VESTI110.AMTIP00F T ON P.PGTIPL = T.TITIPL LEFT JOIN VESTI110.AMTAB00F D ON TRIM(P.PGPERC) = TRIM(D.TACODE) WHERE @Year = P.PGAAGG AND @Month = P.PGMMGG AND @Day = P.PGGGGG AND D.TACODT = 'PER') V WHERE T.PTCTUR = V.PGCTUR" />
+		<add key="SelectTurniTmp" value="SELECT DISTINCT T.PTCTUR AS TURNO, @SelectedDate AS DATA, V.PGPERC AS PERCORSO, V.DEPERC AS DESCRIZIONEPERCORSO, V.PGTIPL AS CODICETIPOLOGIA, V.TIDTIP AS TIPOLOGIATURNO, V.TISASS AS ORDINEASSEGNAMENTO, V.PGNOTA AS NOTA FROM (SELECT PTCTUR FROM INNOTEST.AMPTG00F WHERE PTGGGG = @Day AND PTMMGG = @Month AND PTAAGG = @Year AND PTMATR &lt;> 0 AND PTCTUR &lt;> 0) T, (SELECT P.PGPERC, D.TADESC AS DEPERC, P.PGCTUR, P.PGNOTA, P.PGTIPL, T.TIDTIP, T.TISASS FROM INNOTEST.AMPEG00F P LEFT JOIN INNOTEST.AMTIP00F T ON P.PGTIPL = T.TITIPL LEFT JOIN INNOTEST.AMTAB00F D ON TRIM(P.PGPERC) = TRIM(D.TACODE) WHERE @Year = P.PGAAGG AND @Month = P.PGMMGG AND @Day = P.PGGGGG AND D.TACODT = 'PER') V WHERE T.PTCTUR = V.PGCTUR" />
+		<add key="SelectGiustificativi" value="SELECT G.GSMATR AS MATRICOLA, @SelectedDate AS DATA, G.GSCGST AS CODICEGIUSTIFICATIVO, G.GSHHIN AS ORAINIZIOGIUSTIFICATIVO, G.GSHHFN AS ORAFINEGIUSTIFICATIVO, D.TADESC AS TIPOASSENZA FROM VESTI110.AMGST00F G LEFT JOIN VESTI110.AMTAB00F D ON TRIM(G.GSCGST) = TRIM(D.TACODE) WHERE @StringDate BETWEEN VARCHAR(G.GSAAIN) || Substring('0' || VARCHAR(G.GSMMIN), CHAR_LENGTH('0' || VARCHAR(G.GSMMIN)) - 1, 2) || Substring('0' || VARCHAR(G.GSGGIN), CHAR_LENGTH('0' || VARCHAR(G.GSGGIN)) - 1, 2) AND VARCHAR(G.GSAAFN) || Substring('0' || VARCHAR(G.GSMMFN), CHAR_LENGTH('0' || VARCHAR(G.GSMMFN)) - 1, 2) || Substring('0' || VARCHAR(G.GSGGFN), CHAR_LENGTH('0' || VARCHAR(G.GSGGFN)) - 1, 2) AND D.TACODT = 'GIU'" />
+		<add key="SelectGiustificativiTmp" value="SELECT G.GSMATR AS MATRICOLA, @SelectedDate AS DATA, G.GSCGST AS CODICEGIUSTIFICATIVO, G.GSHHIN AS ORAINIZIOGIUSTIFICATIVO, G.GSHHFN AS ORAFINEGIUSTIFICATIVO, D.TADESC AS TIPOASSENZA FROM INNOTEST.AMGST00F G LEFT JOIN INNOTEST.AMTAB00F D ON TRIM(G.GSCGST) = TRIM(D.TACODE) WHERE @StringDate BETWEEN VARCHAR(G.GSAAIN) || Substring('0' || VARCHAR(G.GSMMIN), CHAR_LENGTH('0' || VARCHAR(G.GSMMIN)) - 1, 2) || Substring('0' || VARCHAR(G.GSGGIN), CHAR_LENGTH('0' || VARCHAR(G.GSGGIN)) - 1, 2) AND VARCHAR(G.GSAAFN) || Substring('0' || VARCHAR(G.GSMMFN), CHAR_LENGTH('0' || VARCHAR(G.GSMMFN)) - 1, 2) || Substring('0' || VARCHAR(G.GSGGFN), CHAR_LENGTH('0' || VARCHAR(G.GSGGFN)) - 1, 2) AND D.TACODT = 'GIU'" />
+		<add key="SelectOrganico" value="SELECT ANMATR, ANCOGN, ANNOME FROM AMPE.APANA00F TmpAccertatori WHERE ? &lt; VARCHAR(ANAACN) || SUBSTRING('0' || VARCHAR(ANMMCN), CHAR_LENGTH('0' || VARCHAR(ANMMCN)) - 1, 2) || SUBSTRING('0' || VARCHAR(ANGGCN), CHAR_LENGTH('0' || VARCHAR(ANGGCN)) - 1, 2) AND ANTICA = 'SO'" />
+		<add key="SelectOrganicoTmp" value="SELECT ANMATR, ANCOGN, ANNOME FROM INNOTEST.APANA00F TmpAccertatori WHERE ? &lt; VARCHAR(ANAACN) || SUBSTRING('0' || VARCHAR(ANMMCN), CHAR_LENGTH('0' || VARCHAR(ANMMCN)) - 1, 2) || SUBSTRING('0' || VARCHAR(ANGGCN), CHAR_LENGTH('0' || VARCHAR(ANGGCN)) - 1, 2) AND ANTICA = 'SO'" />
+		<add key="SelectMensiliAperti" value="SELECT VARCHAR(FAAAGG) || SUBSTRING('0' || VARCHAR(FAMMGG), CHAR_LENGTH('0' || VARCHAR(FAMMGG)) - 1, 2), SUBSTRING('0' || VARCHAR(FAMMGG), CHAR_LENGTH('0' || VARCHAR(FAMMGG)) - 1, 2) || '/' || VARCHAR(FAAAGG), FAAAGG, FAMMGG FROM VESTI110.AMFAV00F WHERE FAFSVE &lt;> 6 OR FAFSVE IS NULL ORDER BY FAAAGG, FAMMGG" />
+		<add key="SelectMensiliApertiTmp" value="SELECT VARCHAR(FAAAGG) || SUBSTRING('0' || VARCHAR(FAMMGG), CHAR_LENGTH('0' || VARCHAR(FAMMGG)) - 1, 2) AS IdMensile, SUBSTRING('0' || VARCHAR(FAMMGG), CHAR_LENGTH('0' || VARCHAR(FAMMGG)) - 1, 2) || '/' || VARCHAR(FAAAGG) As MeseAnno FROM INNOTEST.AMFAV00F WHERE FAFSVE &lt;> 6 OR FAFSVE IS NULL ORDER BY IdMensile" />
+		<add key="SelectTurniAccertatoriMensile" value="SELECT DISTINCT A.AMMATR AS Matricola, CASE WHEN TRIM(VARCHAR(S.SQCTUR)) IS NULL THEN 'Ris.' ELSE TRIM(VARCHAR(S.SQCTUR)) END || ' (' || TRIM(VARCHAR(A.AMMATR)) || ') ' || N.ANCGNO AS Accertatore, CASE WHEN S.SQCTUR IS NULL THEN 0 ELSE S.SQCTUR END AS Turno, N.ANCGNO AS CognomeNome FROM VESTI110.AMAMT00F A LEFT JOIN VESTI110.AMSQA00F S ON A.AMAAGG = S.SQAAAS AND A.AMMMGG = S.SQMMAS AND A.AMMATR = S.SQMATR INNER JOIN AMPE.APANA00F N ON A.AMMATR = N.ANMATR LEFT JOIN (SELECT GSMATR, GSCGST FROM VESTI110.AMGST00F WHERE DATE(@Anno || '-' || Right('0' || @Mese, 2) || '-01') BETWEEN Date(GSAAIN || '-' || Right('0' || GSMMIN, 2) || '-' || Right('0' || GSGGIN, 2)) And Date(GSAAFN || '-' || Right('0' || GSMMFN, 2) || '-' || Right('0' || GSGGFN, 2)) Or DATE(GSAAIN || '-' || Right('0' || GSMMIN, 2) || '-01') = DATE(@Anno || '-' || Right('0' || @Mese, 2) || '-01') Or DATE(GSAAFN || '-' || Right('0' || GSMMFN, 2) || '-01') = DATE(@Anno || '-' || Right('0' || @Mese, 2) || '-01')) G ON A.AMMATR = G.GSMATR WHERE (G.GSCGST Is NULL Or G.GSCGST &lt;> 'AASP') AND A.AMMMGG = @Mese AND A.AMAAGG = @Anno AND A.AMGRUA IN (SELECT AMGRUA FROM VESTI110.AMAMT00F WHERE AMMATR = @Matricola AND AMMMGG = @Mese AND AMAAGG = @Anno) AND A.AMMATR &lt;> @Matricola AND A.AMFLEA = 'N' ORDER BY CognomeNome" />
+		<add key="SelectTurniAccertatoriMensileOld" value="SELECT S.SQMATR AS Matricola, TRIM(VARCHAR(S.SQCTUR)) || ' (' || TRIM(VARCHAR(S.SQMATR)) || ') ' || N.ANCGNO AS Accertatore, S.SQCTUR AS Turno, N.ANCGNO AS CognomeNome FROM (VESTI110.AMAMT00F A INNER JOIN VESTI110.AMSQA00F S ON (A.AMAAGG = S.SQAAAS) AND (A.AMMMGG = S.SQMMAS) AND (A.AMMATR = S.SQMATR)) LEFT JOIN AMPE.APANA00F N ON A.AMMATR = N.ANMATR WHERE S.SQMMAS = @Mese AND S.SQAAAS = @Anno AND A.AMGRUA IN (SELECT AMGRUA FROM VESTI110.AMAMT00F WHERE AMMATR = @Matricola AND AMMMGG = @Mese AND AMAAGG = @Anno) AND S.SQMATR &lt;> @Matricola AND A.AMFLEA = 'N' ORDER BY CognomeNome" />
+		<add key="SelectTurniAccertatoriMensileTmp" value="SELECT S.SQMATR AS Matricola, TRIM(VARCHAR(S.SQCTUR)) || ' (' || TRIM(VARCHAR(S.SQMATR)) || ') ' || N.ANCGNO AS Accertatore, S.SQCTUR AS Turno, N.ANCGNO AS CognomeNome FROM (INNOTEST.AMAMT00F A INNER JOIN INNOTEST.AMSQA00F S ON (A.AMAAGG = S.SQAAAS) AND (A.AMMMGG = S.SQMMAS) AND (A.AMMATR = S.SQMATR)) LEFT JOIN INNOTEST.APANA00F N ON A.AMMATR = N.ANMATR WHERE S.SQMMAS = @Mese AND S.SQAAAS = @Anno AND A.AMGRUA IN (SELECT AMGRUA FROM INNOTEST.AMAMT00F WHERE AMMATR = @Matricola AND AMMMGG = @Mese AND AMAAGG = @Anno) AND S.SQMATR &lt;> @Matricola AND A.AMFLEA = 'N' ORDER BY CognomeNome" />
+		<add key="SelectTurniAccertatoriGiornaliero" value="SELECT DISTINCT A.PTMATR AS Matricola, TRIM(CASE WHEN A.PTCTUR &lt; 90000 THEN VARCHAR(A.PTCTUR) ELSE 'R.' END) || ' (' || TRIM(VARCHAR(A.PTMATR)) || ') ' || B.ANCGNO AS Accertatore, A.PTCTUR AS Turno, B.ANCGNO AS CognomeNome FROM VESTI110.AMPTG00F A INNER JOIN AMPE.APANA00F B ON A.PTMATR = B.ANMATR INNER JOIN VESTI110.AMAMT00F D ON A.PTMATR = D.AMMATR AND A.PTMMGG = D.AMMMGG AND A.PTAAGG = D.AMAAGG LEFT JOIN VESTI110.AMPEG00F C ON A.PTGGGG = C.PGGGGG AND A.PTMMGG = C.PGMMGG AND A.PTAAGG = C.PGAAGG AND A.PTCTUR = C.PGCTUR LEFT JOIN (Select GSMATR, GSCGST From VESTI110.AMGST00F G Where DATE(@Anno || '-' || Right('0' || @Mese, 2) || '-' || Right('0' || @Giorno, 2)) BETWEEN Date(GSAAIN || '-' || Right('0' || GSMMIN, 2) || '-' || Right('0' || GSGGIN, 2)) And Date(GSAAFN || '-' || Right('0' || GSMMFN, 2) || '-' || Right('0' || GSGGFN, 2))) G ON A.PTMATR = G.GSMATR WHERE (G.GSCGST Is NULL Or G.GSCGST &lt;> 'AASP') AND A.PTMATR &lt;> 0 AND A.PTCTUR &lt;> 0 AND A.PTGGGG = @Giorno AND A.PTMMGG = @Mese AND A.PTAAGG = @Anno AND (TRIM(Case When C.PGGRUA Is Null Then D.AMGRUA Else C.PGGRUA End) = (SELECT CASE WHEN TRIM(C1.AMGRUA) = 'POM' THEN 'MAT' ELSE TRIM(C1.AMGRUA) END FROM VESTI110.AMAMT00F C1 WHERE C1.AMMATR = @Matricola AND C1.AMMMGG = @Mese AND C1.AMAAGG = @Anno) OR TRIM(Case When C.PGGRUA Is Null Then D.AMGRUA Else C.PGGRUA End) = (SELECT CASE WHEN TRIM(C2.AMGRUA) = 'MAT' THEN 'POM' ELSE TRIM(C2.AMGRUA) END FROM VESTI110.AMAMT00F C2 WHERE C2.AMMATR = @Matricola AND C2.AMMMGG = @Mese AND C2.AMAAGG = @Anno)) AND A.PTMATR &lt;> @Matricola ORDER BY CognomeNome" />
+		<add key="SelectTurniAccertatoriGiornalieroOld" value="SELECT A.PTMATR AS Matricola, TRIM(CASE WHEN A.PTCTUR &lt; 90000 THEN VARCHAR(A.PTCTUR) ELSE 'R.' END) || ' (' || TRIM(VARCHAR(A.PTMATR)) || ') ' || B.ANCGNO AS Accertatore, A.PTCTUR AS Turno, B.ANCGNO AS CognomeNome FROM VESTI110.AMPTG00F A LEFT JOIN AMPE.APANA00F B ON A.PTMATR = B.ANMATR LEFT JOIN VESTI110.AMAMT00F D ON A.PTMATR = D.AMMATR AND A.PTMMGG = D.AMMMGG AND A.PTAAGG = D.AMAAGG LEFT JOIN VESTI110.AMPEG00F C ON A.PTGGGG = C.PGGGGG AND A.PTMMGG = C.PGMMGG AND A.PTAAGG = C.PGAAGG AND A.PTCTUR = C.PGCTUR WHERE A.PTMATR &lt;> 0 AND A.PTCTUR &lt;> 0 AND A.PTGGGG = @Giorno AND A.PTMMGG = @Mese AND A.PTAAGG = @Anno AND (TRIM(D.AMGRUA) = (SELECT CASE WHEN TRIM(C1.AMGRUA) = 'POM' THEN 'MAT' ELSE TRIM(C1.AMGRUA) END FROM VESTI110.AMAMT00F C1 WHERE C1.AMMATR = @Matricola AND C1.AMMMGG = @Mese AND C1.AMAAGG = @Anno) OR TRIM(C.PGGRUA) = (SELECT CASE WHEN TRIM(C2.AMGRUA) = 'MAT' THEN 'POM' ELSE TRIM(C2.AMGRUA) END FROM VESTI110.AMAMT00F C2 WHERE C2.AMMATR = @Matricola AND C2.AMMMGG = @Mese AND C2.AMAAGG = @Anno)) AND A.PTMATR &lt;> @Matricola ORDER BY CognomeNome" />
+		<add key="SelectTurniAccertatoriGiornalieroTmp" value="SELECT A.PTMATR AS Matricola, TRIM(CASE WHEN A.PTCTUR &lt; 90000 THEN VARCHAR(A.PTCTUR) ELSE 'R.' END) || ' (' || TRIM(VARCHAR(A.PTMATR)) || ') ' || B.ANCGNO AS Accertatore, A.PTCTUR AS Turno, B.ANCGNO AS CognomeNome FROM INNOTEST.AMPTG00F A LEFT JOIN INNOTEST.APANA00F B ON A.PTMATR = B.ANMATR LEFT JOIN INNOTEST.AMAMT00F D ON A.PTMATR = D.AMMATR AND A.PTMMGG = D.AMMMGG AND A.PTAAGG = D.AMAAGG LEFT JOIN INNOTEST.AMPEG00F C ON A.PTGGGG = C.PGGGGG AND A.PTMMGG = C.PGMMGG AND A.PTAAGG = C.PGAAGG AND A.PTCTUR = C.PGCTUR WHERE A.PTMATR &lt;> 0 AND A.PTCTUR &lt;> 0 AND A.PTGGGG = @Giorno AND A.PTMMGG = @Mese AND A.PTAAGG = @Anno AND (TRIM(D.AMGRUA) = (SELECT CASE WHEN TRIM(C1.AMGRUA) = 'POM' THEN 'MAT' ELSE TRIM(C1.AMGRUA) END FROM INNOTEST.AMAMT00F C1 WHERE C1.AMMATR = @Matricola AND C1.AMMMGG = @Mese AND C1.AMAAGG = @Anno) OR TRIM(C.PGGRUA) = (SELECT CASE WHEN TRIM(C2.AMGRUA) = 'MAT' THEN 'POM' ELSE TRIM(C2.AMGRUA) END FROM INNOTEST.AMAMT00F C2 WHERE C2.AMMATR = @Matricola AND C2.AMMMGG = @Mese AND C2.AMAAGG = @Anno)) AND A.PTMATR &lt;> @Matricola ORDER BY CognomeNome" />
+		<add key="SelectTurnoGiornalieroAccertatore" value="Select PTCTUR From VESTI110.AMPTG00F Where PTMATR = @PTMATR And PTGGGG = @PTGGGG And PTMMGG = @PTMMGG And PTAAGG = @PTAAGG" />
+		<add key="SelectTurnoGiornalieroAccertatoreTmp" value="Select PTCTUR From INNOTEST.AMPTG00F Where PTMATR = @PTMATR And PTGGGG = @PTGGGG And PTMMGG = @PTMMGG And PTAAGG = @PTAAGG" />
+		<add key="SelectTurnoOkGiornalieroAccertatore" value="Select Count(*) From VESTI110.AMPTG00F Where PTMATR = @Matricola And PTGGGG = @Giorno And PTMMGG = @Mese And PTAAGG = @Anno AND PTCTUR &lt;> 0" />
+		<add key="SelectTurnoOkGiornalieroAccertatoreTmp" value="Select Count(*) From INNOTEST.AMPTG00F Where PTMATR = @Matricola And PTGGGG = @Giorno And PTMMGG = @Mese And PTAAGG = @Anno AND PTCTUR &lt;> 0" />
+		<add key="SelectTurnoMensileAccertatore" value="SELECT SQCTUR FROM VESTI110.AMSQA00F WHERE SQMATR = @SQMATR AND SQAAAS = @SQAAAS AND SQMMAS = @SQMMAS" />
+		<add key="SelectTurnoMensileAccertatoreTmp" value="SELECT SQCTUR FROM INNOTEST.AMSQA00F WHERE SQMATR = @SQMATR AND SQAAAS = @SQAAAS AND SQMMAS = @SQMMAS" />
+		<add key="SelectTurnoOkMensileAccertatore" value="SELECT Count(*) FROM VESTI110.AMSQA00F WHERE SQMATR = @Matricola AND SQAAAS = @Anno AND SQMMAS = @Mese" />
+		<add key="SelectTurnoOkMensileAccertatoreTmp" value="SELECT Count(*) FROM INNOTEST.AMSQA00F WHERE SQMATR = @Matricola AND SQAAAS = @Anno AND SQMMAS = @Mese" />
+		<add key="SelectMensiliProvvisoriAperti" value="Select Count(*) From VESTI110.AMFAV00F Where FAFSVE &lt;> 6" />
+		<add key="SelectMensiliProvvisoriApertiTmp" value="Select Count(*) From INNOTEST.AMFAV00F Where FAFSVE &lt;> 6" />
+		<add key="SelectCheckMensileAperto" value="SELECT Date(TRIM(FAAAGG) || '-' || Right('0' || TRIM(FAMMGG), 2) || '-01') As Data FROM VESTI110.AMFAV00F WHERE FAFSVE &lt;> 6 OR FAFSVE IS NULL" />
+		<add key="SelectCheckMensileApertoTmp" value="SELECT Date(FAAAGG || '-' || Right('0' || FAMMGG, 2) || '-01') As Data FROM INNOTEST.AMFAV00F WHERE FAFSVE &lt;> 6 OR FAFSVE IS NULL" />
+		<add key="ConnSCAT.ConnectionString" value="user id=ScatInnovatech;data source=appsql;persist security info=True;initial catalog=BRAV_SERVICES;password=gh56hgHf
+
+" />
+		<add key="SqlCommand3.CommandText" value="SELECT A.Matricola, A.Data, A.Turno, A.CognomeNome, A.CodiceGruppo, A.Gruppo, T.TipologiaTurno FROM Accertatori AS A INNER JOIN Turni AS T ON T.Turno = A.Turno WHERE     (A.Data = @Data) AND (T.Data IN  (SELECT MAX(Data) AS Data FROM Turni WHERE (Data &lt;= @Data))) ORDER BY A.Gruppo, A.Turno, A.CognomeNome" />
+	
+		<add key="SQLOreExecutionTime" value="select DATEDIFF(minute, executiontime , getdate() ) as ore  from accertatori_executiontime where SelectedDate= @Data and abilitata= 1" />
+		<add key="DeleteExecutionTime" value="DELETE  FROM Accertatori_ExecutionTime WHERE  (SelectedDate = @Data)" />
+		<add key="InsertExecutionTime" value="INSERT INTO Accertatori_ExecutionTime (ExecutionTime, SelectedDate,Abilitata) VALUES (GETDATE(),@Data,1)" />
+		<add key="SQLNumExecutionTime" value="SELECT COUNT(*) AS n FROM  accertatori_executiontime where SelectedDate = @Data and abilitata= 1" />
+		<add key="MinutiRefresh" value="2" />
+	</appSettings>
+  
+	<system.web>
+		<!--  DYNAMIC DEBUG COMPILATION
+          Set compilation debug="true" to insert debugging symbols (.pdb information)
+          into the compiled page. Because this creates a larger file that executes
+          more slowly, you should set this value to true only when debugging and to
+          false at all other times. For more information, refer to the documentation about
+          debugging ASP.NET files.
+    -->
+    
+		<compilation defaultLanguage="VB" debug="true" numRecompilesBeforeAppRestart="15">
+		<!--  CUSTOM ERROR MESSAGES
+          Set customErrors mode="On" or "RemoteOnly" to enable custom error messages, "Off" to disable. 
+          Add <error> tags for each of the errors you want to handle.
+
+          "On" Always display custom (friendly) messages.
+          "Off" Always display detailed ASP.NET error information.
+          "RemoteOnly" Display custom (friendly) messages only to users not running 
+           on the local Web server. This setting is recommended for security purposes, so 
+           that you do not display application detail information to remote clients.
+           
+    -->
+		</compilation>
+		<customErrors mode="RemoteOnly" />
+		<!--  AUTHENTICATION 
+          This section sets the authentication policies of the application. Possible modes are "Windows", 
+          "Forms", "Passport" and "None"
+
+          "None" No authentication is performed. 
+          "Windows" IIS performs authentication (Basic, Digest, or Integrated Windows) according to 
+           its settings for the application. Anonymous access must be disabled in IIS. 
+          "Forms" You provide a custom form (Web page) for users to enter their credentials, and then 
+           you authenticate them in your application. A user credential token is stored in a cookie.
+          "Passport" Authentication is performed via a centralized authentication service provided
+           by Microsoft that offers a single logon and core profile services for member sites.
+    -->
+		<authentication mode="Forms">
+			<forms loginUrl="~/frmLogin.aspx" name=".ASPXAUTH" timeout="60" path="/" protection="All" />
+		</authentication>
+		<!--  AUTHORIZATION 
+          This section sets the authorization policies of the application. You can allow or deny access
+          to application resources by user or role. Wildcards: "*" mean everyone, "?" means anonymous 
+          (unauthenticated) users.
+    -->
+		<authorization>
+			<deny users="?" />
+			<allow users="*" />
+			<!--  <allow     users="[comma separated list of users]"
+                             roles="[comma separated list of roles]"/>
+                  <deny      users="[comma separated list of users]"
+                             roles="[comma separated list of roles]"/>
+            -->
+		</authorization>
+		<!--  APPLICATION-LEVEL TRACE LOGGING
+          Application-level tracing enables trace log output for every page within an application. 
+          Set trace enabled="true" to enable application trace logging.  If pageOutput="true", the
+          trace information will be displayed at the bottom of each page.  Otherwise, you can view the 
+          application trace log by browsing the "trace.axd" page from your web application
+          root. 
+    -->
+		<trace enabled="false" requestLimit="10" pageOutput="false" traceMode="SortByTime" localOnly="true" />
+		<!--  SESSION STATE SETTINGS
+          By default ASP.NET uses cookies to identify which requests belong to a particular session. 
+          If cookies are not available, a session can be tracked by adding a session identifier to the URL. 
+          To disable cookies, set sessionState cookieless="true".
+    -->
+		<sessionState mode="InProc" stateConnectionString="tcpip=appsql:42424" sqlConnectionString="data source=appsql;Trusted_Connection=yes" cookieless="true" timeout="20" />
+		<!--  GLOBALIZATION
+          This section sets the globalization settings of the application. 
+    -->
+		<globalization requestEncoding="utf-8" responseEncoding="utf-8" culture="it-IT" />
+	</system.web>
+    <system.webServer>
+        <defaultDocument>
+            <files>
+                <remove value="iisstart.htm" />
+                <remove value="default.aspx" />
+                <add value="wf_newmain.aspx" />
+            </files>
+        </defaultDocument>
+
+        <directoryBrowse enabled="true" />
+    </system.webServer>
+    <location path="aspnet_client">
+    </location>
+</configuration>

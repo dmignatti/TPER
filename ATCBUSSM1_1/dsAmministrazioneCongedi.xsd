@@ -1,0 +1,329 @@
+<?xml version="1.0" standalone="yes" ?>
+<xs:schema id="dsAmministrazioneCongedi" targetNamespace="http://www.tempuri.org/dsAmministrazioneCongedi.xsd"
+	xmlns:mstns="http://www.tempuri.org/dsAmministrazioneCongedi.xsd" xmlns="http://www.tempuri.org/dsAmministrazioneCongedi.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"
+	attributeFormDefault="qualified" elementFormDefault="qualified">
+	<xs:element name="dsAmministrazioneCongedi" msdata:IsDataSet="true" msdata:Locale="it-IT">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="RichiesteCambiTurnoMensili">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="IdRichiesta" msdata:DataType="System.Guid, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+								type="xs:string" />
+							<xs:element name="IdAccertatoreRichiedente" type="xs:int" minOccurs="0" />
+							<xs:element name="IdAccertatoreDestinatario" type="xs:int" minOccurs="0" />
+							<xs:element name="data" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="DataApprovazione" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="IdApprovatore" type="xs:int" minOccurs="0" />
+							<xs:element name="StatoApprovazione" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="CognomeNomeRichiedente" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="CognomeNomeDestinatario" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="Approvatore" type="xs:string" minOccurs="0" />
+							<xs:element name="TurnoRichiedente" type="xs:decimal" minOccurs="0" />
+							<xs:element name="TurnoDestinatario" type="xs:decimal" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="RichiesteCambiTurnoMensile">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ts" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="IdRichiesta" msdata:DataType="System.Guid, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+								type="xs:string" />
+							<xs:element name="IdAccertatoreRichiedente" type="xs:int" minOccurs="0" />
+							<xs:element name="IdAccertatoreDestinatario" type="xs:int" minOccurs="0" />
+							<xs:element name="data" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="DataApprovazione" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="IdApprovatore" type="xs:int" minOccurs="0" />
+							<xs:element name="StatoApprovazione" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="CognomeNomeRichiedente" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="CognomeNomeDestinatario" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="Approvatore" type="xs:string" minOccurs="0" />
+							<xs:element name="TurnoRichiedente" type="xs:int" minOccurs="0" />
+							<xs:element name="TurnoDestinatario" type="xs:int" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Riposi">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="TTMATR" type="xs:string" minOccurs="0" />
+							<xs:element name="TTGGGG" type="xs:string" minOccurs="0" />
+							<xs:element name="TTMMGG" type="xs:string" minOccurs="0" />
+							<xs:element name="TTAAGG" type="xs:string" minOccurs="0" />
+							<xs:element name="TTCTUR" type="xs:string" minOccurs="0" />
+							<xs:element name="DataRiposo" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Accertatori_MancataTimbratura">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Approvatore" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="ID" msdata:DataType="System.Guid, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+								type="xs:string" />
+							<xs:element name="AccertatoreId" type="xs:int" minOccurs="0" />
+							<xs:element name="Data" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="Entrata1" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="Uscita1" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="Entrata2" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="Uscita2" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="DalleOre1" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+							<xs:element name="AlleOre1" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+							<xs:element name="DalleOre2" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+							<xs:element name="AlleOre2" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+							<xs:element name="DalleMin1" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+							<xs:element name="AlleMin1" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+							<xs:element name="DalleMin2" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+							<xs:element name="AlleMin2" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+							<xs:element name="StatoApprovazione" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="DataApprovazione" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="ApprovatoDa" type="xs:int" minOccurs="0" />
+							<xs:element name="CreatedOn" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="CognomeNome" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="StatoMancataTimbratura" type="xs:int" minOccurs="0" />
+							<xs:element name="DataInserimento" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="ModifiedOn" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="CreatedBy" type="xs:string" minOccurs="0" />
+							<xs:element name="ModifiedBy" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Accertatori_Causale">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" msdata:ReadOnly="true" type="xs:string" />
+							<xs:element name="Nome" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="Codice" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="SP_PrenotazioniFerieCongedi">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="GIORNO" type="xs:string" />
+							<xs:element name="ListaUser" type="xs:string" minOccurs="0" />
+							<xs:element name="num" type="xs:int" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Table1">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="CHIAVE" type="xs:string" />
+							<xs:element name="GIORNO" type="xs:string" />
+							<xs:element name="NUM" type="xs:int" minOccurs="0" />
+							<xs:element name="IDACCERTATORE" type="xs:string" />
+							<xs:element name="IDUSER" type="xs:string" />
+							<xs:element name="LISTAUSER" type="xs:string" minOccurs="0" />
+							<xs:element name="DATAEORA" type="xs:dateTime" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="RichiesteFerie">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ts" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="IdRichiesta" msdata:DataType="System.Guid, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+								type="xs:string" />
+							<xs:element name="IdAccertatore" type="xs:int" minOccurs="0" />
+							<xs:element name="DalGiorno" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="AlGiorno" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="Ordine" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="StatoApprovazione" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="DataApprovazione" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="IdApprovatore" type="xs:int" minOccurs="0" />
+							<xs:element name="Expr1" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="CognomeNome" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="EMail" type="xs:string" minOccurs="0" />
+							<xs:element name="Abilitato" type="xs:boolean" minOccurs="0" />
+							<xs:element name="DataUltimoAccesso" type="xs:string" minOccurs="0" />
+							<xs:element name="OraUltimoAccesso" type="xs:string" minOccurs="0" />
+							<xs:element name="NrAccessi" type="xs:int" minOccurs="0" />
+							<xs:element name="TipoUtente" type="xs:int" minOccurs="0" />
+							<xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+							<xs:element name="Approvatore" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="RichiesteCongediGarantiti">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ts" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="IdRichiesta" msdata:DataType="System.Guid, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+								type="xs:string" />
+							<xs:element name="IdAccertatore" type="xs:int" minOccurs="0" />
+							<xs:element name="DalGiorno" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="AlGiorno" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="Ordine" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="StatoApprovazione" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="DataApprovazione" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="IdApprovatore" type="xs:int" minOccurs="0" />
+							<xs:element name="Expr1" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="CognomeNome" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="EMail" type="xs:string" minOccurs="0" />
+							<xs:element name="Abilitato" type="xs:boolean" minOccurs="0" />
+							<xs:element name="DataUltimoAccesso" type="xs:string" minOccurs="0" />
+							<xs:element name="OraUltimoAccesso" type="xs:string" minOccurs="0" />
+							<xs:element name="NrAccessi" type="xs:int" minOccurs="0" />
+							<xs:element name="TipoUtente" type="xs:int" minOccurs="0" />
+							<xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+							<xs:element name="Approvatore" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="RichiesteCongediFrazionati">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="stato" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+							<xs:element name="ts" msdata:ReadOnly="true" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="IdRichiesta" msdata:DataType="System.Guid, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+								msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="IdAccertatore" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+							<xs:element name="Data" msdata:ReadOnly="true" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="DalleOre" msdata:ReadOnly="true" type="xs:long" minOccurs="0" />
+							<xs:element name="AlleOre" msdata:ReadOnly="true" type="xs:long" minOccurs="0" />
+							<xs:element name="StatoApprovazione" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="DataApprovazione" msdata:ReadOnly="true" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="IdApprovatore" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+							<xs:element name="Garantiti" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="CognomeNome" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="EMail" type="xs:string" minOccurs="0" />
+							<xs:element name="Abilitato" type="xs:boolean" minOccurs="0" />
+							<xs:element name="DataUltimoAccesso" type="xs:string" minOccurs="0" />
+							<xs:element name="OraUltimoAccesso" type="xs:string" minOccurs="0" />
+							<xs:element name="NrAccessi" type="xs:int" minOccurs="0" />
+							<xs:element name="TipoUtente" type="xs:int" minOccurs="0" />
+							<xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+							<xs:element name="Approvatore" type="xs:string" minOccurs="0" />
+							<xs:element name="Intero" msdata:ReadOnly="true" type="xs:boolean" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="RichiesteCambiTurno">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ts" msdata:ReadOnly="true" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="IdRichiesta" msdata:DataType="System.Guid, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+								msdata:ReadOnly="true" type="xs:string" />
+							<xs:element name="IdAccertatoreRichiedente" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+							<xs:element name="IdAccertatoreDestinatario" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+							<xs:element name="data" msdata:ReadOnly="true" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="Necessari" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="DataApprovazione" msdata:ReadOnly="true" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="IdApprovatore" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+							<xs:element name="StatoApprovazione" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="CognomeNomeRichiedente" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="CognomeNomeDestinatario" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="Approvatore" type="xs:string" minOccurs="0" />
+							<xs:element name="TurnoRichiedente" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="TurnoDestinatario" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="RichiesteCongedi">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ts" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="IdRichiesta" msdata:DataType="System.Guid, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+								type="xs:string" />
+							<xs:element name="IdAccertatore" type="xs:int" minOccurs="0" />
+							<xs:element name="DalGiorno" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="AlGiorno" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="Ordine" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="StatoApprovazione" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="DataApprovazione" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="IdApprovatore" type="xs:int" minOccurs="0" />
+							<xs:element name="Expr1" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="CognomeNome" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="EMail" type="xs:string" minOccurs="0" />
+							<xs:element name="Abilitato" type="xs:boolean" minOccurs="0" />
+							<xs:element name="DataUltimoAccesso" type="xs:string" minOccurs="0" />
+							<xs:element name="OraUltimoAccesso" type="xs:string" minOccurs="0" />
+							<xs:element name="NrAccessi" type="xs:int" minOccurs="0" />
+							<xs:element name="TipoUtente" type="xs:int" minOccurs="0" />
+							<xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+							<xs:element name="Approvatore" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Accertatori_GiustificativoRichiesta">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Approvatore" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="CognomeNome" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="ID" msdata:DataType="System.Guid, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+								type="xs:string" />
+							<xs:element name="AccertatoreId" type="xs:int" />
+							<xs:element name="ORDINE" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="codice" type="xs:string" minOccurs="0" />
+							<xs:element name="StatoApprovazione" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="Accertatori_GiustificativoCausaleId" msdata:DataType="System.Guid, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+								type="xs:string" minOccurs="0" />
+							<xs:element name="DataDa" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="DataA" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="OraDa" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="OraA" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="StatoGiustificativo" type="xs:int" minOccurs="0" />
+							<xs:element name="DataRichiesta" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="DataApprovazione" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="ApprovatoDa" type="xs:boolean" minOccurs="0" />
+							<xs:element name="CreatedOn" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="ModifiedOn" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="CreatedBy" type="xs:string" minOccurs="0" />
+							<xs:element name="ModifiedBy" type="xs:string" minOccurs="0" />
+							<xs:element name="Frazionato" type="xs:boolean" minOccurs="0" />
+							<xs:element name="DefaultApprovato" type="xs:boolean" minOccurs="0" />
+							<xs:element name="PreavvisoGG" type="xs:int" minOccurs="0" />
+							<xs:element name="NrMaxGG" type="xs:int" minOccurs="0" />
+							<xs:element name="Causale" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="dsAmministrazioneCongediKey4" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:RichiesteCambiTurnoMensili" />
+			<xs:field xpath="mstns:IdRichiesta" />
+		</xs:unique>
+		<xs:unique name="dsAmministrazioneCongediKey6" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:RichiesteCambiTurnoMensile" />
+			<xs:field xpath="mstns:IdRichiesta" />
+		</xs:unique>
+		<xs:unique name="Constraint1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Riposi" />
+			<xs:field xpath="mstns:ID" />
+		</xs:unique>
+		<xs:unique name="dsAmministrazioneCongediKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Accertatori_MancataTimbratura" />
+			<xs:field xpath="mstns:ID" />
+		</xs:unique>
+		<xs:unique name="dsAmministrazioneCongediKey8" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Accertatori_Causale" />
+			<xs:field xpath="mstns:ID" />
+		</xs:unique>
+		<xs:unique name="Table1_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Table1" />
+			<xs:field xpath="mstns:id" />
+			<xs:field xpath="mstns:CHIAVE" />
+			<xs:field xpath="mstns:GIORNO" />
+			<xs:field xpath="mstns:IDUSER" />
+			<xs:field xpath="mstns:DATAEORA" />
+		</xs:unique>
+		<xs:unique name="dsAmministrazioneCongediKey5" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:RichiesteFerie" />
+			<xs:field xpath="mstns:IdRichiesta" />
+		</xs:unique>
+		<xs:unique name="dsAmministrazioneCongediKey3" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:RichiesteCambiTurno" />
+			<xs:field xpath="mstns:IdRichiesta" />
+		</xs:unique>
+		<xs:key name="dsAmministrazioneCongediKey2" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Accertatori_GiustificativoRichiesta" />
+			<xs:field xpath="mstns:ID" />
+		</xs:key>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,67 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="DsConsumi" targetNamespace="http://www.tempuri.org/DsConsumi.xsd" xmlns:mstns="http://www.tempuri.org/DsConsumi.xsd" xmlns="http://www.tempuri.org/DsConsumi.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="DsConsumi" msdata:IsDataSet="true">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="Consumi">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msdata:DataType="System.Guid, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" />
+              <xs:element name="IdCentroCCS" msdata:DataType="System.Guid, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" minOccurs="0" />
+              <xs:element name="IdGruppoCCS" msdata:DataType="System.Guid, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" minOccurs="0" />
+              <xs:element name="Data" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Valore" type="xs:double" minOccurs="0" />
+              <xs:element name="DataCreazione" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CentroCS" type="xs:string" minOccurs="0" />
+              <xs:element name="GruppoCS" type="xs:string" minOccurs="0" />
+              <xs:element name="OrdineC" type="xs:int" minOccurs="0" />
+              <xs:element name="OrdineG" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CS_Centri">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdCentroCS" msdata:DataType="System.Guid, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" />
+              <xs:element name="CentroCS" type="xs:string" minOccurs="0" />
+              <xs:element name="OrdineC" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CS_Gruppi">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdGruppoCS" msdata:DataType="System.Guid, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" />
+              <xs:element name="GruppoCS" type="xs:string" minOccurs="0" />
+              <xs:element name="OrdineG" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CS_Consumi">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msdata:DataType="System.Guid, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" />
+              <xs:element name="IdCentroCCS" msdata:DataType="System.Guid, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" minOccurs="0" />
+              <xs:element name="IdGruppoCCS" msdata:DataType="System.Guid, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" minOccurs="0" />
+              <xs:element name="Data" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Valore" type="xs:double" minOccurs="0" />
+              <xs:element name="DataCreazione" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:CS_Centri" />
+      <xs:field xpath="mstns:IdCentroCS" />
+    </xs:unique>
+    <xs:unique name="CS_Gruppi_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:CS_Gruppi" />
+      <xs:field xpath="mstns:IdGruppoCS" />
+    </xs:unique>
+    <xs:unique name="CS_Consumi_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:CS_Consumi" />
+      <xs:field xpath="mstns:Id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

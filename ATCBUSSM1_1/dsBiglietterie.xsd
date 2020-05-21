@@ -1,0 +1,395 @@
+<?xml version="1.0" standalone="yes" ?>
+<xs:schema id="dsBiglietterie" targetNamespace="http://www.tempuri.org/dsBiglietterie.xsd"
+	xmlns:mstns="http://www.tempuri.org/dsBiglietterie.xsd" xmlns="http://www.tempuri.org/dsBiglietterie.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"
+	attributeFormDefault="qualified" elementFormDefault="qualified">
+	<xs:element name="dsBiglietterie" msdata:IsDataSet="true" msdata:Locale="it-IT">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="CentroInBici_Parentela">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="Descrizione" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="CentroInBici_Allegati">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Id" msdata:DataType="System.Guid, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+								type="xs:string" />
+							<xs:element name="IdAnagrafica" type="xs:int" minOccurs="0" />
+							<xs:element name="Description" type="xs:string" minOccurs="0" />
+							<xs:element name="FileName" type="xs:string" minOccurs="0" />
+							<xs:element name="Extension" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="CentroInBici_Note">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Id" msdata:DataType="System.Guid, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+								type="xs:string" />
+							<xs:element name="IdAnagrafica" type="xs:int" minOccurs="0" />
+							<xs:element name="IdTipoNota" type="xs:int" minOccurs="0" />
+							<xs:element name="Tipo" type="xs:string" minOccurs="0" />
+							<xs:element name="Data" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="Nota" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="AutoParchimetri_Tipi">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID_DSI" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="DSI" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="AutoParchimetri_Venduti">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID_AUTO" type="xs:int" />
+							<xs:element name="NUMERATORE" type="xs:int" minOccurs="0" />
+							<xs:element name="MATAUTO" type="xs:string" minOccurs="0" />
+							<xs:element name="DATAVENDITA" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="DATARESO" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="DSI" type="xs:int" minOccurs="0" />
+							<xs:element name="Tipo" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="AutoParchimetri_Anagrafica">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="NUMERATORE" type="xs:int" />
+							<xs:element name="DATA_INSERIMENTO" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="MATRICOLA" type="xs:string" minOccurs="0" />
+							<xs:element name="COGNOME" type="xs:string" minOccurs="0" />
+							<xs:element name="NOME" type="xs:string" minOccurs="0" />
+							<xs:element name="VIA" type="xs:string" minOccurs="0" />
+							<xs:element name="NUMEROVIA" type="xs:string" minOccurs="0" />
+							<xs:element name="CITTA" type="xs:string" minOccurs="0" />
+							<xs:element name="CAP" type="xs:string" minOccurs="0" />
+							<xs:element name="TELEFONO" type="xs:string" minOccurs="0" />
+							<xs:element name="MAIL" type="xs:string" minOccurs="0" />
+							<xs:element name="DSI" type="xs:int" minOccurs="0" />
+							<xs:element name="ATTIVA" type="xs:boolean" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="BikePark">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" type="xs:int" />
+							<xs:element name="DATA" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="MATRICOLA" type="xs:string" minOccurs="0" />
+							<xs:element name="COGNOME" type="xs:string" minOccurs="0" />
+							<xs:element name="NOME" type="xs:string" minOccurs="0" />
+							<xs:element name="DATA_NASCITA" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="RES_VIA" type="xs:string" minOccurs="0" />
+							<xs:element name="RES_N_CIV" type="xs:string" minOccurs="0" />
+							<xs:element name="RES_CAP" type="xs:string" minOccurs="0" />
+							<xs:element name="RES_ID_CIT" type="xs:string" minOccurs="0" />
+							<xs:element name="RES_CIT" type="xs:string" minOccurs="0" />
+							<xs:element name="RES_PROV" type="xs:string" minOccurs="0" />
+							<xs:element name="TEL" type="xs:string" minOccurs="0" />
+							<xs:element name="CEL" type="xs:string" minOccurs="0" />
+							<xs:element name="DOM_RES" type="xs:boolean" />
+							<xs:element name="DOM_VIA" type="xs:string" minOccurs="0" />
+							<xs:element name="DOM_N_CIV" type="xs:string" minOccurs="0" />
+							<xs:element name="DOM_CAP" type="xs:string" minOccurs="0" />
+							<xs:element name="DOM_ID_CIT" type="xs:string" minOccurs="0" />
+							<xs:element name="DOM_CIT" type="xs:string" minOccurs="0" />
+							<xs:element name="DOM_PROV" type="xs:string" minOccurs="0" />
+							<xs:element name="DOCUMENTO_TIPO" type="xs:int" minOccurs="0" />
+							<xs:element name="DOCUMENTO_NUM" type="xs:string" minOccurs="0" />
+							<xs:element name="CODICEFISCALE" type="xs:string" minOccurs="0" />
+							<xs:element name="TESSERA" type="xs:string" minOccurs="0" />
+							<xs:element name="REGIONE" type="xs:boolean" />
+							<xs:element name="DATAINSERIMENTO" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="IdUtente" type="xs:int" minOccurs="0" />
+							<xs:element name="Cauzione" type="xs:double" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="BikePark_Allegati">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Id" msdata:DataType="System.Guid, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+								type="xs:string" />
+							<xs:element name="IdAnagrafica" type="xs:int" minOccurs="0" />
+							<xs:element name="Description" type="xs:string" minOccurs="0" />
+							<xs:element name="FileName" type="xs:string" minOccurs="0" />
+							<xs:element name="Extension" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="CentroInBici_TipoDocumento">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="Descrizione" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="COMUNIPROV">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="CMISTA" type="xs:string" />
+							<xs:element name="CMCOMU" type="xs:string" minOccurs="0" />
+							<xs:element name="CMPROV" type="xs:string" />
+							<xs:element name="CMCAPO" type="xs:string" />
+							<xs:element name="CMBELF" type="xs:string" />
+							<xs:element name="NAZIONE" type="xs:string" />
+							<xs:element name="CMORD" type="xs:short" />
+							<xs:element name="UpdateDate" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="DeleteDate" type="xs:dateTime" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="BikePark_TipoNota">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="IdTipoNota" type="xs:int" />
+							<xs:element name="Tipo" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="BikePark_Note">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Id" msdata:DataType="System.Guid, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+								type="xs:string" />
+							<xs:element name="IdAnagrafica" type="xs:int" minOccurs="0" />
+							<xs:element name="IdTipoNota" type="xs:int" minOccurs="0" />
+							<xs:element name="Tipo" type="xs:string" minOccurs="0" />
+							<xs:element name="Data" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="Nota" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="BikeParkLista">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" type="xs:int" />
+							<xs:element name="DATA" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="MATRICOLA" type="xs:string" minOccurs="0" />
+							<xs:element name="COGNOME" type="xs:string" minOccurs="0" />
+							<xs:element name="NOME" type="xs:string" minOccurs="0" />
+							<xs:element name="DATA_NASCITA" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="RES_VIA" type="xs:string" minOccurs="0" />
+							<xs:element name="RES_N_CIV" type="xs:string" minOccurs="0" />
+							<xs:element name="RES_CAP" type="xs:string" minOccurs="0" />
+							<xs:element name="RES_ID_CIT" type="xs:string" minOccurs="0" />
+							<xs:element name="RES_CIT" type="xs:string" minOccurs="0" />
+							<xs:element name="RES_PROV" type="xs:string" minOccurs="0" />
+							<xs:element name="TEL" type="xs:string" minOccurs="0" />
+							<xs:element name="CEL" type="xs:string" minOccurs="0" />
+							<xs:element name="DOM_RES" type="xs:boolean" />
+							<xs:element name="DOM_VIA" type="xs:string" minOccurs="0" />
+							<xs:element name="DOM_N_CIV" type="xs:string" minOccurs="0" />
+							<xs:element name="DOM_CAP" type="xs:string" minOccurs="0" />
+							<xs:element name="DOM_ID_CIT" type="xs:string" minOccurs="0" />
+							<xs:element name="DOM_CIT" type="xs:string" minOccurs="0" />
+							<xs:element name="DOM_PROV" type="xs:string" minOccurs="0" />
+							<xs:element name="DOCUMENTO_TIPO" type="xs:int" minOccurs="0" />
+							<xs:element name="DOCUMENTO_NUM" type="xs:string" minOccurs="0" />
+							<xs:element name="TESSERA" type="xs:string" minOccurs="0" />
+							<xs:element name="CODICEFISCALE" type="xs:string" minOccurs="0" />
+							<xs:element name="REGIONE" type="xs:boolean" />
+							<xs:element name="DATAINSERIMENTO" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="IdUtente" type="xs:int" minOccurs="0" />
+							<xs:element name="Cauzione" type="xs:double" minOccurs="0" />
+							<xs:element name="NumeroNote" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+							<xs:element name="NumeroAllegati" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="CentroInBici_DurataAbbonamento">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Id" type="xs:int" />
+							<xs:element name="Descrizione" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="CentroInBici_OrigineAbbonamento">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Id" type="xs:int" />
+							<xs:element name="Descrizione" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="CentroInBici_TipoAbbonamento">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Id" type="xs:int" />
+							<xs:element name="Descrizione" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="CentroInBici_TipoNota">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="IdTipoNota" type="xs:int" />
+							<xs:element name="Tipo" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="CentroInBici">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" type="xs:int" />
+							<xs:element name="DATA" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="MATRICOLA" type="xs:string" minOccurs="0" />
+							<xs:element name="MINORENNE" type="xs:boolean" />
+							<xs:element name="COGNOME" type="xs:string" minOccurs="0" />
+							<xs:element name="NOME" type="xs:string" minOccurs="0" />
+							<xs:element name="DATA_NASCITA" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="PARENTELA" type="xs:int" minOccurs="0" />
+							<xs:element name="COGNOME_PARENTE" type="xs:string" minOccurs="0" />
+							<xs:element name="NOME_PARENTE" type="xs:string" minOccurs="0" />
+							<xs:element name="RES_VIA" type="xs:string" minOccurs="0" />
+							<xs:element name="RES_N_CIV" type="xs:string" minOccurs="0" />
+							<xs:element name="RES_CAP" type="xs:string" minOccurs="0" />
+							<xs:element name="RES_CIT" type="xs:string" minOccurs="0" />
+							<xs:element name="RES_PROV" type="xs:string" minOccurs="0" />
+							<xs:element name="RES_VIA_P" type="xs:string" minOccurs="0" />
+							<xs:element name="RES_N_CIV_P" type="xs:string" minOccurs="0" />
+							<xs:element name="RES_CAP_P" type="xs:string" minOccurs="0" />
+							<xs:element name="RES_CIT_P" type="xs:string" minOccurs="0" />
+							<xs:element name="RES_PROV_P" type="xs:string" minOccurs="0" />
+							<xs:element name="TEL" type="xs:string" minOccurs="0" />
+							<xs:element name="CEL" type="xs:string" minOccurs="0" />
+							<xs:element name="DOM_RES" type="xs:boolean" />
+							<xs:element name="DOM_VIA" type="xs:string" minOccurs="0" />
+							<xs:element name="DOM_N_CIV" type="xs:string" minOccurs="0" />
+							<xs:element name="DOM_CAP" type="xs:string" minOccurs="0" />
+							<xs:element name="DOM_CIT" type="xs:string" minOccurs="0" />
+							<xs:element name="DOM_PROV" type="xs:string" minOccurs="0" />
+							<xs:element name="DOCUMENTO_TIPO" type="xs:int" minOccurs="0" />
+							<xs:element name="DOCUMENTO_NUM" type="xs:string" minOccurs="0" />
+							<xs:element name="CHIAVE" type="xs:string" minOccurs="0" />
+							<xs:element name="REGIONE" type="xs:boolean" />
+							<xs:element name="IdUtente" type="xs:int" minOccurs="0" />
+							<xs:element name="Cauzione" type="xs:double" minOccurs="0" />
+							<xs:element name="Studente" type="xs:boolean" minOccurs="0" />
+							<xs:element name="Comune" type="xs:boolean" minOccurs="0" />
+							<xs:element name="ABBONAMENTO_NUM" type="xs:string" minOccurs="0" />
+							<xs:element name="ABBONAMENTO_ORIGINE" type="xs:int" minOccurs="0" />
+							<xs:element name="ABBONAMENTO_TIPO" type="xs:int" minOccurs="0" />
+							<xs:element name="ABBONAMENTO_DURATA" type="xs:int" minOccurs="0" />
+							<xs:element name="Pendolare" type="xs:boolean" minOccurs="0" />
+							<xs:element name="ABBONAMENTO_ALTRO" type="xs:string" minOccurs="0" />
+							<xs:element name="ABBONAMENTO_TRATTA" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="AutoParchimetri_Anagrafiche">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="NUMERATORE" type="xs:int" />
+							<xs:element name="DATA_INSERIMENTO" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="MATRICOLA" type="xs:string" minOccurs="0" />
+							<xs:element name="COGNOME" type="xs:string" minOccurs="0" />
+							<xs:element name="NOME" type="xs:string" minOccurs="0" />
+							<xs:element name="VIA" type="xs:string" minOccurs="0" />
+							<xs:element name="NUMEROVIA" type="xs:string" minOccurs="0" />
+							<xs:element name="CITTA" type="xs:string" minOccurs="0" />
+							<xs:element name="CAP" type="xs:string" minOccurs="0" />
+							<xs:element name="TELEFONO" type="xs:string" minOccurs="0" />
+							<xs:element name="MAIL" type="xs:string" minOccurs="0" />
+							<xs:element name="DSI" type="xs:int" minOccurs="0" />
+							<xs:element name="MATAUTO" type="xs:string" minOccurs="0" />
+							<xs:element name="TIPO" type="xs:string" minOccurs="0" />
+							<xs:element name="DATAVENDITA" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="DATARESO" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="ATTIVA" type="xs:boolean" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="Constraint1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:CentroInBici_Parentela" />
+			<xs:field xpath="mstns:Id" />
+		</xs:unique>
+		<xs:unique name="CentroInBici_Allegati_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:CentroInBici_Allegati" />
+			<xs:field xpath="mstns:Id" />
+		</xs:unique>
+		<xs:unique name="dsBiglietterieKey3" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:CentroInBici_Note" />
+			<xs:field xpath="mstns:Id" />
+		</xs:unique>
+		<xs:unique name="AutoParchimetri_Tipi_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:AutoParchimetri_Tipi" />
+			<xs:field xpath="mstns:ID_DSI" />
+		</xs:unique>
+		<xs:unique name="dsBiglietterieKey2" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:AutoParchimetri_Venduti" />
+			<xs:field xpath="mstns:ID_AUTO" />
+		</xs:unique>
+		<xs:unique name="AutoParchimetri_Anagrafica_Constraint1" msdata:ConstraintName="Constraint1"
+			msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:AutoParchimetri_Anagrafica" />
+			<xs:field xpath="mstns:NUMERATORE" />
+		</xs:unique>
+		<xs:unique name="BikePark_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:BikePark" />
+			<xs:field xpath="mstns:ID" />
+		</xs:unique>
+		<xs:unique name="BikePark_Allegati_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:BikePark_Allegati" />
+			<xs:field xpath="mstns:Id" />
+		</xs:unique>
+		<xs:unique name="CentroInBici_TipoDocumento_Constraint1" msdata:ConstraintName="Constraint1"
+			msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:CentroInBici_TipoDocumento" />
+			<xs:field xpath="mstns:Id" />
+		</xs:unique>
+		<xs:unique name="BikePark_TipoNota_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:BikePark_TipoNota" />
+			<xs:field xpath="mstns:IdTipoNota" />
+		</xs:unique>
+		<xs:unique name="dsBiglietterieKey4" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:BikePark_Note" />
+			<xs:field xpath="mstns:Id" />
+		</xs:unique>
+		<xs:unique name="BikeParkLista_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:BikeParkLista" />
+			<xs:field xpath="mstns:ID" />
+		</xs:unique>
+		<xs:unique name="CentroInBici_DurataAbbonamento_Constraint1" msdata:ConstraintName="Constraint1"
+			msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:CentroInBici_DurataAbbonamento" />
+			<xs:field xpath="mstns:Id" />
+		</xs:unique>
+		<xs:unique name="CentroInBici_OrigineAbbonamento_Constraint1" msdata:ConstraintName="Constraint1"
+			msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:CentroInBici_OrigineAbbonamento" />
+			<xs:field xpath="mstns:Id" />
+		</xs:unique>
+		<xs:unique name="CentroInBici_TipoAbbonamento_Constraint1" msdata:ConstraintName="Constraint1"
+			msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:CentroInBici_TipoAbbonamento" />
+			<xs:field xpath="mstns:Id" />
+		</xs:unique>
+		<xs:unique name="CentroInBici_TipoNota_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:CentroInBici_TipoNota" />
+			<xs:field xpath="mstns:IdTipoNota" />
+		</xs:unique>
+		<xs:unique name="CentroInBici_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:CentroInBici" />
+			<xs:field xpath="mstns:ID" />
+		</xs:unique>
+		<xs:key name="dsBiglietterieKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:AutoParchimetri_Anagrafiche" />
+			<xs:field xpath="mstns:ID" />
+		</xs:key>
+	</xs:element>
+</xs:schema>

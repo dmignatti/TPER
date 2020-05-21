@@ -1,0 +1,46 @@
+<?xml version="1.0" standalone="yes" ?>
+<xs:schema id="DSBlocco" targetNamespace="http://www.tempuri.org/DSBlocco.xsd" xmlns:mstns="http://www.tempuri.org/DSBlocco.xsd"
+	xmlns="http://www.tempuri.org/DSBlocco.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+	<xs:element name="DSBlocco" msdata:IsDataSet="true" msdata:Locale="it-IT">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="ATC_Utenti">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="CognomeNome" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Accertatori_BloccoCambioGiornaliero">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" msdata:DataType="System.Guid, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+								type="xs:string" />
+							<xs:element name="AccertatoreId" type="xs:int" minOccurs="0" />
+							<xs:element name="CognomeNome" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="AggiornamentoOn" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="InizioOn" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="FineOn" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="Motivo" type="xs:string" minOccurs="0" />
+							<xs:element name="IdInizioBy" type="xs:int" minOccurs="0" />
+							<xs:element name="IdFineBy" type="xs:int" minOccurs="0" />
+							<xs:element name="Stato" type="xs:string" minOccurs="0" />
+							<xs:element name="InseritoDa" type="xs:string" minOccurs="0" />
+							<xs:element name="TerminatoDa" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="Constraint1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:ATC_Utenti" />
+			<xs:field xpath="mstns:ID" />
+		</xs:unique>
+		<xs:key name="DSBloccoKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Accertatori_BloccoCambioGiornaliero" />
+			<xs:field xpath="mstns:ID" />
+		</xs:key>
+	</xs:element>
+</xs:schema>

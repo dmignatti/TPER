@@ -1,0 +1,41 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="dsOrdinanze" targetNamespace="http://www.tempuri.org/dsOrdinanze.xsd" xmlns:mstns="http://www.tempuri.org/dsOrdinanze.xsd" xmlns="http://www.tempuri.org/dsOrdinanze.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="dsOrdinanze" msdata:IsDataSet="true" msdata:Locale="it-IT">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="OrdinanzeTipi">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+              <xs:element name="Tipo" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Ordinanze">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdVia" type="xs:int" minOccurs="0" />
+              <xs:element name="Codice" type="xs:int" minOccurs="0" />
+              <xs:element name="Nome" type="xs:string" minOccurs="0" />
+              <xs:element name="Id" type="xs:int" minOccurs="0" />
+              <xs:element name="Titolo" type="xs:string" minOccurs="0" />
+              <xs:element name="Testo" type="xs:string" minOccurs="0" />
+              <xs:element name="File" msdata:DataType="System.Guid, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" minOccurs="0" />
+              <xs:element name="Ext" type="xs:string" minOccurs="0" />
+              <xs:element name="Tipo" type="xs:short" minOccurs="0" />
+              <xs:element name="dal" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="al" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="IdParent" type="xs:int" minOccurs="0" />
+              <xs:element name="Ordinanza" type="xs:string" minOccurs="0" />
+              <xs:element name="TipoOrdinanza" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:OrdinanzeTipi" />
+      <xs:field xpath="mstns:Id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

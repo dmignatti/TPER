@@ -1,0 +1,29 @@
+1. Nel database della depositeria creare la tabella Angr_Zona
+	
+		Zona_Pk			Int				4     Identity
+	  Zona_Desc		VarChar		20
+	  
+2. Riempire la tabella con lo statement
+
+		Insert Into Angr_Zona(Zona_Desc)
+			Select Distinct Stra_Zona
+			From Angr_Strada
+		
+3. Aggiungere un campo alla tabella Angr_Strada
+
+		Stra_Fk_Zona		Int		4
+		
+4. Lanciare lo statement
+
+		Update Angr_Strada 
+		Set Stra_Fk_Zona = Z.Zona_Pk 
+		From Angr_Strada S Left Join Angr_Zona Z On 
+			S.Stra_Zona = Z.Zona_Desc
+			
+5. Modificare la tabella Angr_Strada
+
+		Il campo Stra_Pk diventa Identità
+		
+6. Aggiungere la riga corrispondente a wf_editviezone.aspx (FK_Sect = 2) in ATC_ModuliPortale
+
+7. Aggiungere la riga abilitante admin a wf_editviezone.aspx su ATC_RelModuloGruppo

@@ -1,0 +1,66 @@
+<?xml version="1.0" standalone="yes" ?>
+<xs:schema id="dsGiornaliero" targetNamespace="http://www.tempuri.org/dsGiornaliero.xsd" xmlns:mstns="http://www.tempuri.org/dsGiornaliero.xsd"
+	xmlns="http://www.tempuri.org/dsGiornaliero.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+	<xs:element name="dsGiornaliero" msdata:IsDataSet="true" msdata:Locale="it-IT">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Gruppi">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="TACODT" type="xs:string" minOccurs="0" />
+							<xs:element name="TACODE" type="xs:string" minOccurs="0" />
+							<xs:element name="TADESC" type="xs:string" minOccurs="0" />
+							<xs:element name="TADATI" type="xs:string" minOccurs="0" />
+							<xs:element name="TAFLAG" type="xs:string" minOccurs="0" />
+							<xs:element name="TAGGRG" type="xs:decimal" minOccurs="0" />
+							<xs:element name="TAMMRG" type="xs:decimal" minOccurs="0" />
+							<xs:element name="TAAARG" type="xs:decimal" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Accertatori">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Matricola" type="xs:decimal" />
+							<xs:element name="Data" type="xs:dateTime" />
+							<xs:element name="Turno" type="xs:decimal" minOccurs="0" />
+							<xs:element name="FlagAssenza" type="xs:boolean" minOccurs="0" />
+							<xs:element name="CognomeNome" type="xs:string" minOccurs="0" />
+							<xs:element name="CodiceGiustificativo" type="xs:string" minOccurs="0" />
+							<xs:element name="OraInizioGiustificativo" type="xs:decimal" minOccurs="0" />
+							<xs:element name="OraFineGiustificativo" type="xs:decimal" minOccurs="0" />
+							<xs:element name="TipoAssenza" type="xs:string" minOccurs="0" />
+							<xs:element name="CodiceGruppo" type="xs:string" minOccurs="0" />
+							<xs:element name="Gruppo" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Turni">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Turno" type="xs:decimal" />
+							<xs:element name="Data" type="xs:dateTime" />
+							<xs:element name="CodiceTipologia" type="xs:string" minOccurs="0" />
+							<xs:element name="TipologiaTurno" type="xs:string" minOccurs="0" />
+							<xs:element name="Percorso" type="xs:string" minOccurs="0" />
+							<xs:element name="DescrizionePercorso" type="xs:string" minOccurs="0" />
+							<xs:element name="OrdineAssegnamento" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Nota" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="Constraint1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Accertatori" />
+			<xs:field xpath="mstns:Matricola" />
+			<xs:field xpath="mstns:Data" />
+		</xs:unique>
+		<xs:unique name="Turni_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Turni" />
+			<xs:field xpath="mstns:Turno" />
+			<xs:field xpath="mstns:Data" />
+		</xs:unique>
+	</xs:element>
+</xs:schema>

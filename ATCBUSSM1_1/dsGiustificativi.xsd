@@ -1,0 +1,105 @@
+<?xml version="1.0" standalone="yes" ?>
+<xs:schema id="dsGiustificativi" targetNamespace="http://www.tempuri.org/dsGiustificativi.xsd"
+	xmlns:mstns="http://www.tempuri.org/dsGiustificativi.xsd" xmlns="http://www.tempuri.org/dsGiustificativi.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"
+	attributeFormDefault="qualified" elementFormDefault="qualified">
+	<xs:element name="dsGiustificativi" msdata:IsDataSet="true" msdata:Locale="it-IT">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="TPER_Accertatori">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="NomeCognome" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Accertatori_Causale">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" msdata:DataType="System.Guid, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+								type="xs:string" />
+							<xs:element name="Nome" type="xs:string" minOccurs="0" />
+							<xs:element name="Codice" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Accertatori_GiustificativoCausale">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" msdata:DataType="System.Guid, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+								type="xs:string" />
+							<xs:element name="Nome" type="xs:string" minOccurs="0" />
+							<xs:element name="Codice" type="xs:string" minOccurs="0" />
+							<xs:element name="ValiditaDa" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="ValiditaA" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="Frazionato" type="xs:boolean" minOccurs="0" />
+							<xs:element name="DefaultApprovato" type="xs:boolean" minOccurs="0" />
+							<xs:element name="SenzaPreavviso" type="xs:boolean" minOccurs="0" />
+							<xs:element name="PreavvisoGG" type="xs:int" minOccurs="0" />
+							<xs:element name="NrMaxGG" type="xs:int" minOccurs="0" />
+							<xs:element name="CreatedOn" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="ModifiedOn" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="CreatedBy" type="xs:string" minOccurs="0" />
+							<xs:element name="ModifiedBy" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Accertatori_GiustificativoRichiesta">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Approvatore" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="ID" msdata:DataType="System.Guid, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+								type="xs:string" />
+							<xs:element name="AccertatoreId" type="xs:int" />
+							<xs:element name="Accertatori_GiustificativoCausaleId" msdata:DataType="System.Guid, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+								type="xs:string" minOccurs="0" />
+							<xs:element name="DataDa" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="DataA" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="OraDa" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="ORDINE" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="CODICE" type="xs:string" minOccurs="0" />
+							<xs:element name="OraA" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="Ora_Da" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+							<xs:element name="Minuti_Da" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+							<xs:element name="Ora_A" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+							<xs:element name="Minuti_A" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+							<xs:element name="StatoGiustificativo" type="xs:int" minOccurs="0" />
+							<xs:element name="DataRichiesta" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="DataApprovazione" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="ApprovatoDa" type="xs:boolean" minOccurs="0" />
+							<xs:element name="CreatedOn" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="ModifiedOn" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="CreatedBy" type="xs:string" minOccurs="0" />
+							<xs:element name="ModifiedBy" type="xs:string" minOccurs="0" />
+							<xs:element name="CognomeNome" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="Causale" type="xs:string" minOccurs="0" />
+							<xs:element name="Frazionato" type="xs:boolean" minOccurs="0" />
+							<xs:element name="DefaultApprovato" type="xs:boolean" minOccurs="0" />
+							<xs:element name="PreavvisoGG" type="xs:int" minOccurs="0" />
+							<xs:element name="NrMaxGG" type="xs:int" minOccurs="0" />
+							<xs:element name="StatoApprovazione" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="Constraint1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:TPER_Accertatori" />
+			<xs:field xpath="mstns:ID" />
+		</xs:unique>
+		<xs:unique name="Accertatori_Causale_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Accertatori_Causale" />
+			<xs:field xpath="mstns:ID" />
+		</xs:unique>
+		<xs:unique name="Accertatori_GiustificativoCausale_Constraint1" msdata:ConstraintName="Constraint1"
+			msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Accertatori_GiustificativoCausale" />
+			<xs:field xpath="mstns:ID" />
+		</xs:unique>
+		<xs:key name="dsGiustificativiKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Accertatori_GiustificativoRichiesta" />
+			<xs:field xpath="mstns:ID" />
+		</xs:key>
+	</xs:element>
+</xs:schema>

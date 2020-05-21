@@ -1,0 +1,3801 @@
+<VisualStudioProject>
+    <VisualBasic
+        ProjectType = "Web"
+        ProductVersion = "7.10.3077"
+        SchemaVersion = "2.0"
+        ProjectGuid = "{55EB52FD-7375-47A9-A508-BFE6A228FD87}"
+        SccProjectName = "SAK"
+        SccLocalPath = "SAK"
+        SccAuxPath = "SAK"
+        SccProvider = "SAK"
+    >
+        <Build>
+            <Settings
+                ApplicationIcon = ""
+                AssemblyKeyContainerName = ""
+                AssemblyName = "ATCBussm1"
+                AssemblyOriginatorKeyFile = ""
+                AssemblyOriginatorKeyMode = "None"
+                DefaultClientScript = "JScript"
+                DefaultHTMLPageLayout = "Flow"
+                DefaultTargetSchema = "IE50"
+                DelaySign = "false"
+                OutputType = "Library"
+                OptionCompare = "Binary"
+                OptionExplicit = "On"
+                OptionStrict = "Off"
+                RootNamespace = "ATCBussm1"
+                StartupObject = "ATCBussm1.(None)"
+            >
+                <Config
+                    Name = "Debug"
+                    BaseAddress = "285212672"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = ""
+                    DefineDebug = "false"
+                    DefineTrace = "false"
+                    DebugSymbols = "true"
+                    IncrementalBuild = "true"
+                    Optimize = "false"
+                    OutputPath = "bin\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "1"
+                />
+                <Config
+                    Name = "Release"
+                    BaseAddress = "285212672"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = ""
+                    DefineDebug = "false"
+                    DefineTrace = "true"
+                    DebugSymbols = "false"
+                    IncrementalBuild = "false"
+                    Optimize = "true"
+                    OutputPath = "bin\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "1"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                />
+                <Reference
+                    Name = "System.Data"
+                    AssemblyName = "System.Data"
+                />
+                <Reference
+                    Name = "System.Drawing"
+                    AssemblyName = "System.Drawing"
+                />
+                <Reference
+                    Name = "System.Web"
+                    AssemblyName = "System.Web"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.Xml"
+                />
+                <Reference
+                    Name = "System.Design"
+                    AssemblyName = "System.Design"
+                    HintPath = "..\..\..\WINNT\Microsoft.NET\Framework\v1.1.4322\System.Design.dll"
+                />
+                <Reference
+                    Name = "System.Windows.Forms"
+                    AssemblyName = "System.Windows.Forms"
+                    HintPath = "..\..\..\WINNT\Microsoft.NET\Framework\v1.1.4322\System.Windows.Forms.dll"
+                />
+                <Reference
+                    Name = "system.web.services"
+                    AssemblyName = "System.Web.Services"
+                    HintPath = "..\..\..\winnt\assembly\gac\system.web.services\1.0.5000.0__b03f5f7f11d50a3a\system.web.services.dll"
+                />
+                <Reference
+                    Name = "Microsoft.Web.UI.WebControls"
+                    AssemblyName = "Microsoft.Web.UI.WebControls"
+                    HintPath = "..\..\..\Programmi\Microsoft Internet Explorer WebControls\Microsoft.Web.UI.WebControls.dll"
+                />
+                <Reference
+                    Name = "crystaldecisions.shared"
+                    AssemblyName = "CrystalDecisions.Shared"
+                    HintPath = "..\..\..\windows\assembly\gac\crystaldecisions.shared\9.1.5000.0__692fbea5521e1304\crystaldecisions.shared.dll"
+                />
+                <Reference
+                    Name = "crystaldecisions.crystalreports.engine"
+                    AssemblyName = "CrystalDecisions.CrystalReports.Engine"
+                    HintPath = "..\..\..\windows\assembly\gac\crystaldecisions.crystalreports.engine\9.1.5000.0__692fbea5521e1304\crystaldecisions.crystalreports.engine.dll"
+                />
+                <Reference
+                    Name = "crystaldecisions.reportsource"
+                    AssemblyName = "CrystalDecisions.ReportSource"
+                    HintPath = "..\..\..\windows\assembly\gac\crystaldecisions.reportsource\9.1.5000.0__692fbea5521e1304\crystaldecisions.reportsource.dll"
+                />
+            </References>
+            <Imports>
+                <Import Namespace = "Microsoft.VisualBasic" />
+                <Import Namespace = "System" />
+                <Import Namespace = "System.Collections" />
+                <Import Namespace = "System.Configuration" />
+                <Import Namespace = "System.Data" />
+                <Import Namespace = "System.Drawing" />
+                <Import Namespace = "System.Web" />
+                <Import Namespace = "System.Web.UI" />
+                <Import Namespace = "System.Web.UI.HtmlControls" />
+                <Import Namespace = "System.Web.UI.WebControls" />
+            </Imports>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "AssemblyInfo.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ATC.css"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "atcbConstant.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "atcbModule.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "atcbModules.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "atcbSession.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "atcbWUser.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ATCPrint.css"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "CheckListInstallazione.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "dsAccertatoriASGiornaliero.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsAccertatoriASGiornaliero.vb"
+                />
+                <File
+                    RelPath = "dsAccertatoriASGiornaliero.vb"
+                    DependentUpon = "dsAccertatoriASGiornaliero.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "dsAccertatoriASGiornaliero.xsx"
+                    DependentUpon = "dsAccertatoriASGiornaliero.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "dsAmministrazioneCongedi.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsAmministrazioneCongedi.vb"
+                />
+                <File
+                    RelPath = "dsAmministrazioneCongedi.vb"
+                    DependentUpon = "dsAmministrazioneCongedi.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "dsAmministrazioneCongedi.xsx"
+                    DependentUpon = "dsAmministrazioneCongedi.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "DSApprovaPreno.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "DSApprovaPreno.vb"
+                />
+                <File
+                    RelPath = "DSApprovaPreno.vb"
+                    DependentUpon = "DSApprovaPreno.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "DSApprovaPreno.xsx"
+                    DependentUpon = "DSApprovaPreno.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "DsAutoPV.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "DsAutoPV.vb"
+                />
+                <File
+                    RelPath = "DsAutoPV.vb"
+                    DependentUpon = "DsAutoPV.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "DsAutoPV.xsx"
+                    DependentUpon = "DsAutoPV.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "dsBiglietterie.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsBiglietterie.vb"
+                />
+                <File
+                    RelPath = "dsBiglietterie.vb"
+                    DependentUpon = "dsBiglietterie.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "dsBiglietterie.xsx"
+                    DependentUpon = "dsBiglietterie.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "DSBlocco.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "DSBlocco.vb"
+                />
+                <File
+                    RelPath = "DSBlocco.vb"
+                    DependentUpon = "DSBlocco.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "DSBlocco.xsx"
+                    DependentUpon = "DSBlocco.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "DsCambioTurnoStessoT.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "DsCambioTurnoStessoT.vb"
+                />
+                <File
+                    RelPath = "DsCambioTurnoStessoT.vb"
+                    DependentUpon = "DsCambioTurnoStessoT.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "dsCambiTurnoDaAccettare.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsCambiTurnoDaAccettare.vb"
+                />
+                <File
+                    RelPath = "dsCambiTurnoDaAccettare.vb"
+                    DependentUpon = "dsCambiTurnoDaAccettare.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "dsCambiTurnoDaAccettare.xsx"
+                    DependentUpon = "dsCambiTurnoDaAccettare.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "dsCambiTurnoGiornalieri.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsCambiTurnoGiornalieri.vb"
+                />
+                <File
+                    RelPath = "dsCambiTurnoGiornalieri.vb"
+                    DependentUpon = "dsCambiTurnoGiornalieri.xsd"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "dsCambiTurnoGiornalieri.xsx"
+                    DependentUpon = "dsCambiTurnoGiornalieri.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "dsCambiTurnoGiornalieriStessoTipo.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsCambiTurnoGiornalieriStessoTipo.vb"
+                />
+                <File
+                    RelPath = "Copy of dsCambiTurnoGiornalieri.vb"
+                    DependentUpon = "dsCambiTurnoGiornalieriStessoTipo.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "dsCambiTurnoGiornalieriStessoTipo.vb"
+                    DependentUpon = "dsCambiTurnoGiornalieriStessoTipo.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "dsCambiTurnoGiornalieriStessoTipo.xsx"
+                    DependentUpon = "dsCambiTurnoGiornalieriStessoTipo.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "dsCambiTurnoMensile.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsCambiTurnoMensile.vb"
+                />
+                <File
+                    RelPath = "dsCambiTurnoMensile.vb"
+                    DependentUpon = "dsCambiTurnoMensile.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "dsCambiTurnoMensile.xsx"
+                    DependentUpon = "dsCambiTurnoMensile.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "dsCambiTurnoNecessario.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsCambiTurnoNecessario.vb"
+                />
+                <File
+                    RelPath = "dsCambiTurnoNecessario.vb"
+                    DependentUpon = "dsCambiTurnoNecessario.xsd"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "dsCambiTurnoNecessario.xsx"
+                    DependentUpon = "dsCambiTurnoNecessario.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "dsCambiTurnoStessoTipo.xsd"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "dsCambiTurnoStessoTipo.xsx"
+                    DependentUpon = "dsCambiTurnoStessoTipo.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "DsCarSharing.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "DsCarSharing.vb"
+                />
+                <File
+                    RelPath = "DsCarSharing.vb"
+                    DependentUpon = "DsCarSharing.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "DsConfMobilita.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "DsConfMobilita.vb"
+                />
+                <File
+                    RelPath = "DsConfMobilita.vb"
+                    DependentUpon = "DsConfMobilita.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "DsConfMobilita.xsx"
+                    DependentUpon = "DsConfMobilita.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "DsConsumi.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "DsConsumi.vb"
+                />
+                <File
+                    RelPath = "DsConsumi.vb"
+                    DependentUpon = "DsConsumi.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "DsConsumi.xsx"
+                    DependentUpon = "DsConsumi.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "DsConsuntivo.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "DsConsuntivo.vb"
+                />
+                <File
+                    RelPath = "DsConsuntivo.vb"
+                    DependentUpon = "DsConsuntivo.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "DsConsuntivo.xsx"
+                    DependentUpon = "DsConsuntivo.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "DsGestionePreno.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "DsGestionePreno.vb"
+                />
+                <File
+                    RelPath = "DsGestionePreno.vb"
+                    DependentUpon = "DsGestionePreno.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "DsGestionePreno.xsx"
+                    DependentUpon = "DsGestionePreno.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "dsGiornaliero.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsGiornaliero.vb"
+                />
+                <File
+                    RelPath = "dsGiornaliero.vb"
+                    DependentUpon = "dsGiornaliero.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "dsGiornaliero.xsx"
+                    DependentUpon = "dsGiornaliero.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "dsGiustificativi.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsGiustificativi.vb"
+                />
+                <File
+                    RelPath = "dsGiustificativi.vb"
+                    DependentUpon = "dsGiustificativi.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "dsGiustificativi.xsx"
+                    DependentUpon = "dsGiustificativi.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "dsListaTurniStessoTipo.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsListaTurniStessoTipo.vb"
+                />
+                <File
+                    RelPath = "dsListaTurniStessoTipo.vb"
+                    DependentUpon = "dsListaTurniStessoTipo.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "DsMancataTimbratura.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "DsMancataTimbratura.vb"
+                />
+                <File
+                    RelPath = "DsMancataTimbratura.vb"
+                    DependentUpon = "DsMancataTimbratura.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "DsMancataTimbratura.xsx"
+                    DependentUpon = "DsMancataTimbratura.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "DsMostraFerieCongedi.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "DsMostraFerieCongedi.vb"
+                />
+                <File
+                    RelPath = "DsMostraFerieCongedi.vb"
+                    DependentUpon = "DsMostraFerieCongedi.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "DsMostraFerieCongedi.xsx"
+                    DependentUpon = "DsMostraFerieCongedi.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "DsNoteSezione.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "DsNoteSezione.vb"
+                />
+                <File
+                    RelPath = "DsNoteSezione.vb"
+                    DependentUpon = "DsNoteSezione.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "DsNoteSezione.xsx"
+                    DependentUpon = "DsNoteSezione.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "dsOrdinanze.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsOrdinanze.vb"
+                />
+                <File
+                    RelPath = "dsOrdinanze.vb"
+                    DependentUpon = "dsOrdinanze.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "dsOrdinanze.xsx"
+                    DependentUpon = "dsOrdinanze.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "dsOrganico.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsOrganico.vb"
+                />
+                <File
+                    RelPath = "dsOrganico.vb"
+                    DependentUpon = "dsOrganico.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "dsOrganico.xsx"
+                    DependentUpon = "dsOrganico.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "DsOrganicoAcc.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "DsOrganicoAcc.vb"
+                />
+                <File
+                    RelPath = "DsOrganicoAcc.vb"
+                    DependentUpon = "DsOrganicoAcc.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "DsParcheggi.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "DsParcheggi.vb"
+                />
+                <File
+                    RelPath = "DsParcheggi.vb"
+                    DependentUpon = "DsParcheggi.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "DsPianoSosta.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "DsPianoSosta.vb"
+                />
+                <File
+                    RelPath = "DsPianoSosta.vb"
+                    DependentUpon = "DsPianoSosta.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "DsPianoSosta.xsx"
+                    DependentUpon = "DsPianoSosta.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "DSPrenotazione.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "DSPrenotazione.vb"
+                />
+                <File
+                    RelPath = "DSPrenotazione.vb"
+                    DependentUpon = "DSPrenotazione.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "DSPrenotazione.xsx"
+                    DependentUpon = "DSPrenotazione.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "DsPrenotazioneM.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "DsPrenotazioneM.vb"
+                />
+                <File
+                    RelPath = "DsPrenotazioneM.vb"
+                    DependentUpon = "DsPrenotazioneM.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "DsPrenotazioneRichieste.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "DsPrenotazioneRichieste.vb"
+                />
+                <File
+                    RelPath = "DsPrenotazioneRichieste.vb"
+                    DependentUpon = "DsPrenotazioneRichieste.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "DsPrenotazioneRichieste.xsx"
+                    DependentUpon = "DsPrenotazioneRichieste.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "DsPSostaGSpeciali.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "DsPSostaGSpeciali.vb"
+                />
+                <File
+                    RelPath = "DsPSostaGSpeciali.vb"
+                    DependentUpon = "DsPSostaGSpeciali.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "DsRicaviSosta.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "DsRicaviSosta.vb"
+                />
+                <File
+                    RelPath = "DsRicaviSosta.vb"
+                    DependentUpon = "DsRicaviSosta.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "DsRicaviSosta.xsx"
+                    DependentUpon = "DsRicaviSosta.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "DsRichiestaPrenotazione.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "DsRichiestaPrenotazione.vb"
+                />
+                <File
+                    RelPath = "DsRichiestaPrenotazione.vb"
+                    DependentUpon = "DsRichiestaPrenotazione.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "DsRichiestaPrenotazione.xsx"
+                    DependentUpon = "DsRichiestaPrenotazione.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "dsRichieste.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsRichieste.vb"
+                />
+                <File
+                    RelPath = "dsRichieste.vb"
+                    DependentUpon = "dsRichieste.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "dsRichieste.xsx"
+                    DependentUpon = "dsRichieste.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "dsRichiesteCongediFrazionati.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsRichiesteCongediFrazionati.vb"
+                />
+                <File
+                    RelPath = "dsRichiesteCongediFrazionati.vb"
+                    DependentUpon = "dsRichiesteCongediFrazionati.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "dsRichiesteCongediFrazionati.xsx"
+                    DependentUpon = "dsRichiesteCongediFrazionati.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "DsRichiesteCongediGarantiti.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "DsRichiesteCongediGarantiti.vb"
+                />
+                <File
+                    RelPath = "DsRichiesteCongediGarantiti.vb"
+                    DependentUpon = "DsRichiesteCongediGarantiti.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "DsRichiesteCongediGarantitiFra.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "DsRichiesteCongediGarantitiFra.vb"
+                />
+                <File
+                    RelPath = "DsRichiesteCongediGarantitiFra.vb"
+                    DependentUpon = "DsRichiesteCongediGarantitiFra.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "DsRichiesteCongediGarantitiFra.xsx"
+                    DependentUpon = "DsRichiesteCongediGarantitiFra.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "dsRichiesteFerie.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsRichiesteFerie.vb"
+                />
+                <File
+                    RelPath = "dsRichiesteFerie.vb"
+                    DependentUpon = "dsRichiesteFerie.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "dsRichiesteFerie.xsx"
+                    DependentUpon = "dsRichiesteFerie.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "dsRichiesteSeparate.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsRichiesteSeparate.vb"
+                />
+                <File
+                    RelPath = "dsRichiesteSeparate.vb"
+                    DependentUpon = "dsRichiesteSeparate.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "dsRichiesteSeparate.xsx"
+                    DependentUpon = "dsRichiesteSeparate.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "DsRichiesteSpostamentoRiposo.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "DsRichiesteSpostamentoRiposo.vb"
+                />
+                <File
+                    RelPath = "DsRichiesteSpostamentoRiposo.vb"
+                    DependentUpon = "DsRichiesteSpostamentoRiposo.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "DsRichiesteSpostamentoRiposo.xsx"
+                    DependentUpon = "DsRichiesteSpostamentoRiposo.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "DSRiposi.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "DSRiposi.vb"
+                />
+                <File
+                    RelPath = "DSRiposi.vb"
+                    DependentUpon = "DSRiposi.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "DSRiposi.xsx"
+                    DependentUpon = "DSRiposi.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "DsRiposiPubblica.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "DsRiposiPubblica.vb"
+                />
+                <File
+                    RelPath = "DsRiposiPubblica.vb"
+                    DependentUpon = "DsRiposiPubblica.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "DsRiposiTutti.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "DsRiposiTutti.vb"
+                />
+                <File
+                    RelPath = "DsRiposiTutti.vb"
+                    DependentUpon = "DsRiposiTutti.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "DsSettori.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "DsSettori.vb"
+                />
+                <File
+                    RelPath = "DsSettori.vb"
+                    DependentUpon = "DsSettori.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "DsSpostamentoRiposo.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "DsSpostamentoRiposo.vb"
+                />
+                <File
+                    RelPath = "DsSpostamentoRiposo.vb"
+                    DependentUpon = "DsSpostamentoRiposo.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "DsSpostamentoRiposo.xsx"
+                    DependentUpon = "DsSpostamentoRiposo.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "DsStalli.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "DsStalli.vb"
+                />
+                <File
+                    RelPath = "DsStalli.vb"
+                    DependentUpon = "DsStalli.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "DsStalli.xsx"
+                    DependentUpon = "DsStalli.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "dsStradario.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsStradario.vb"
+                />
+                <File
+                    RelPath = "dsStradario.vb"
+                    DependentUpon = "dsStradario.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "dsStradario.xsx"
+                    DependentUpon = "dsStradario.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "DsTipoTurni.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "DsTipoTurni.vb"
+                />
+                <File
+                    RelPath = "DsTipoTurni.vb"
+                    DependentUpon = "DsTipoTurni.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "DsTipoTurni.xsx"
+                    DependentUpon = "DsTipoTurni.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "DsTitoliSosta.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "DsTitoliSosta.vb"
+                />
+                <File
+                    RelPath = "DsTitoliSosta.vb"
+                    DependentUpon = "DsTitoliSosta.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "DsTitoliSosta.xsx"
+                    DependentUpon = "DsTitoliSosta.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "dsTURNI.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsTURNI.vb"
+                />
+                <File
+                    RelPath = "dsTURNI.vb"
+                    DependentUpon = "dsTURNI.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "dsTURNI.xsx"
+                    DependentUpon = "dsTURNI.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "DsTURNIAE.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "DsTURNIAE1.vb"
+                />
+                <File
+                    RelPath = "DsTURNIAE.xsx"
+                    DependentUpon = "DsTURNIAE.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "DsTURNIAE1.vb"
+                    DependentUpon = "DsTURNIAE.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "dsUtenti.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsUtenti.vb"
+                />
+                <File
+                    RelPath = "dsUtenti.vb"
+                    DependentUpon = "dsUtenti.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "dsUtenti.xsx"
+                    DependentUpon = "dsUtenti.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "dsValori.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsValori.vb"
+                />
+                <File
+                    RelPath = "dsValori.vb"
+                    DependentUpon = "dsValori.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "dsValori.xsx"
+                    DependentUpon = "dsValori.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "dsVestizione.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsVestizione.vb"
+                />
+                <File
+                    RelPath = "dsVestizione.vb"
+                    DependentUpon = "dsVestizione.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "dsVestizione.xsx"
+                    DependentUpon = "dsVestizione.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "frmLogin.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "frmLogin.aspx.vb"
+                    DependentUpon = "frmLogin.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "frmLogin.aspx.resx"
+                    DependentUpon = "frmLogin.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "frmOrdinanza.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "frmOrdinanza.aspx.vb"
+                    DependentUpon = "frmOrdinanza.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "frmOrdinanza.aspx.resx"
+                    DependentUpon = "frmOrdinanza.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Funzioni.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Global.asax"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Global.asax.vb"
+                    DependentUpon = "Global.asax"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Global.asax.resx"
+                    DependentUpon = "Global.asax.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ListaModuliPortale.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ModuloPortale.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "PageFooter.ascx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PageFooter.ascx.vb"
+                    DependentUpon = "PageFooter.ascx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "PageFooter.ascx.resx"
+                    DependentUpon = "PageFooter.ascx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "PageFooterMain.ascx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PageFooterMain.ascx.vb"
+                    DependentUpon = "PageFooterMain.ascx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "PageFooterMain.ascx.resx"
+                    DependentUpon = "PageFooterMain.ascx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "PageHeader.ascx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PageHeader.ascx.vb"
+                    DependentUpon = "PageHeader.ascx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "PageHeader.ascx.resx"
+                    DependentUpon = "PageHeader.ascx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Preview.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Preview.aspx.vb"
+                    DependentUpon = "Preview.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Preview.aspx.resx"
+                    DependentUpon = "Preview.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "PreviewBP.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PreviewBP.aspx.vb"
+                    DependentUpon = "PreviewBP.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "PreviewBP.aspx.resx"
+                    DependentUpon = "PreviewBP.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Styles.css"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "supDBHoliday.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "supDBHolidayConf.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "supDBHolidays.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "supFunction.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "supGDATCSessionDay.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "supGDATCSessionDays.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "supGDATCSessionDetail.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "supGDATCSessionFilter.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "supGDATCSessionLog.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "supGDATCSessionLogs.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "supGDATCSessionRecord.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "supGDATCSessionRecordset.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "supHoliday.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "supHolidays.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "supInfrazioneCdS.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "supInfrazioniCdS.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "supQuietanzaCdS.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "supQuietanzeCdS.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "supRpt1.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "supRpt1Day.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "supRpt1Days.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "supRpt1Detail.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "supRpt1Details.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "supRpt1Session.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "supRpt1Sessions.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "supRpt1User.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "supRpt1Users.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "supSeaboDay.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "supSeaboMonth.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "supSqlCommand.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "supSqlCommands.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "supStatCompact.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "supStatCompactCell.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "supStatCompactRow.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "supStatCompactRows.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "supStatCount.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "supStatData.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "supStatDetail.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "supStatDetails.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "supStatMonth.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "supStatMonthEntries.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "supStatMonthEntry.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "supStatYearDetail.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "supStatYearDetails.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "supStatYears.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "supTarfCustodia.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "supTarfInterval.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "supTarfIntervals.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "supTariffa.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "supTariffarioCustodia.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "supTariffarioInfr.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "supTariffarioRimozione.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "supTblCustodia.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "supTblDamages.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "supTblRimozione.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "supTblVerbaliCdS.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "supTransaction.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "supTransactionCnn.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "supVehicle.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "supVehicleDPT.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "supVehicleHND.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "supVehicleRBD.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "supVehicleRBT.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "supVehicleRSO.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "supVehicleRTR.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "supVehicleRVI.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "supVehicles.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "supVehicleSearch.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Utente.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wc_checkpermission.ascx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wc_checkpermission.ascx.vb"
+                    DependentUpon = "wc_checkpermission.ascx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wc_checkpermission.ascx.resx"
+                    DependentUpon = "wc_checkpermission.ascx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Web.config"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_ammpwdaccertatori.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_ammpwdaccertatori.aspx.vb"
+                    DependentUpon = "wf_ammpwdaccertatori.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_ammpwdaccertatori.aspx.resx"
+                    DependentUpon = "wf_ammpwdaccertatori.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_autoparchimetri.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_autoparchimetri.aspx.vb"
+                    DependentUpon = "wf_autoparchimetri.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_autoparchimetri.aspx.resx"
+                    DependentUpon = "wf_autoparchimetri.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_AutoparchimetriV.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_AutoparchimetriV.aspx.vb"
+                    DependentUpon = "wf_AutoparchimetriV.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_AutoparchimetriV.aspx.resx"
+                    DependentUpon = "wf_AutoparchimetriV.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_autoparchimetro.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_autoparchimetro.aspx.vb"
+                    DependentUpon = "wf_autoparchimetro.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_autoparchimetro.aspx.resx"
+                    DependentUpon = "wf_autoparchimetro.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_basesosta.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_basesosta.aspx.vb"
+                    DependentUpon = "wf_basesosta.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_basesosta.aspx.resx"
+                    DependentUpon = "wf_basesosta.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_bikepark.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_bikepark.aspx.vb"
+                    DependentUpon = "wf_bikepark.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_bikepark.aspx.resx"
+                    DependentUpon = "wf_bikepark.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_bikeparknota.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_bikeparknota.aspx.vb"
+                    DependentUpon = "wf_bikeparknota.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_bikeparknota.aspx.resx"
+                    DependentUpon = "wf_bikeparknota.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_bikeparknote.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_bikeparknote.aspx.vb"
+                    DependentUpon = "wf_bikeparknote.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_bikeparknote.aspx.resx"
+                    DependentUpon = "wf_bikeparknote.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_blockdaycount.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_blockdaycount.aspx.vb"
+                    DependentUpon = "wf_blockdaycount.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_blockdaycount.aspx.resx"
+                    DependentUpon = "wf_blockdaycount.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_cambiturno.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_cambiturno.aspx.vb"
+                    DependentUpon = "wf_cambiturno.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_cambiturno.aspx.resx"
+                    DependentUpon = "wf_cambiturno.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_cambiturnomensile.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_cambiturnomensile.aspx.vb"
+                    DependentUpon = "wf_cambiturnomensile.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_cambiturnomensile.aspx.resx"
+                    DependentUpon = "wf_cambiturnomensile.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_cambiturnoNecessario.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_cambiturnoNecessario.aspx.vb"
+                    DependentUpon = "wf_cambiturnoNecessario.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_cambiturnoNecessario.aspx.resx"
+                    DependentUpon = "wf_cambiturnoNecessario.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_cambiturnoStessoTipo.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_cambiturnoStessoTipo.aspx.vb"
+                    DependentUpon = "wf_cambiturnoStessoTipo.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_cambiturnoStessoTipo.aspx.resx"
+                    DependentUpon = "wf_cambiturnoStessoTipo.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_centroinbici.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_centroinbici.aspx.vb"
+                    DependentUpon = "wf_centroinbici.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_centroinbici.aspx.resx"
+                    DependentUpon = "wf_centroinbici.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_centroinbicinota.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_centroinbicinota.aspx.vb"
+                    DependentUpon = "wf_centroinbicinota.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_centroinbicinota.aspx.resx"
+                    DependentUpon = "wf_centroinbicinota.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_centroinbicinote.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_centroinbicinote.aspx.vb"
+                    DependentUpon = "wf_centroinbicinote.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_centroinbicinote.aspx.resx"
+                    DependentUpon = "wf_centroinbicinote.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_cercabikepark.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_cercabikepark.aspx.vb"
+                    DependentUpon = "wf_cercabikepark.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_cercabikepark.aspx.resx"
+                    DependentUpon = "wf_cercabikepark.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_cercacentroinbici.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_cercacentroinbici.aspx.vb"
+                    DependentUpon = "wf_cercacentroinbici.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_cercacentroinbici.aspx.resx"
+                    DependentUpon = "wf_cercacentroinbici.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_confMobilita.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_confMobilita.aspx.vb"
+                    DependentUpon = "wf_confMobilita.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_confMobilita.aspx.resx"
+                    DependentUpon = "wf_confMobilita.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_confTurniPatente.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_confTurniPatente.aspx.vb"
+                    DependentUpon = "wf_confTurniPatente.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_confTurniPatente.aspx.resx"
+                    DependentUpon = "wf_confTurniPatente.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_confTurnoPatente.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_confTurnoPatente.aspx.vb"
+                    DependentUpon = "wf_confTurnoPatente.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_confTurnoPatente.aspx.resx"
+                    DependentUpon = "wf_confTurnoPatente.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_congedi.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_congedi.aspx.vb"
+                    DependentUpon = "wf_congedi.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_congedi.aspx.resx"
+                    DependentUpon = "wf_congedi.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_congedi_Cntrl.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_congedi_Cntrl.aspx.vb"
+                    DependentUpon = "wf_congedi_Cntrl.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_congedi_Cntrl.aspx.resx"
+                    DependentUpon = "wf_congedi_Cntrl.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_congedifrazionati.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_congedifrazionati.aspx.vb"
+                    DependentUpon = "wf_congedifrazionati.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_congedifrazionati.aspx.resx"
+                    DependentUpon = "wf_congedifrazionati.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_congediGarantiti.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_congediGarantiti.aspx.vb"
+                    DependentUpon = "wf_congediGarantiti.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_congediGarantiti.aspx.resx"
+                    DependentUpon = "wf_congediGarantiti.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_congediGarantitifra.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_congediGarantitifra.aspx.vb"
+                    DependentUpon = "wf_congediGarantitifra.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_congediGarantitifra.aspx.resx"
+                    DependentUpon = "wf_congediGarantitifra.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_CSConsumiAz.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_CSConsumiAz.aspx.vb"
+                    DependentUpon = "wf_CSConsumiAz.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_CSConsumiAz.aspx.resx"
+                    DependentUpon = "wf_CSConsumiAz.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_CSDatiSintesi.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_CSDatiSintesi.aspx.vb"
+                    DependentUpon = "wf_CSDatiSintesi.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_CSDatiSintesi.aspx.resx"
+                    DependentUpon = "wf_CSDatiSintesi.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_datiquietanza.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_datiquietanza.aspx.vb"
+                    DependentUpon = "wf_datiquietanza.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_datiquietanza.aspx.resx"
+                    DependentUpon = "wf_datiquietanza.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_dativeicoloexit.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_dativeicoloexit.aspx.vb"
+                    DependentUpon = "wf_dativeicoloexit.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_dativeicoloexit.aspx.resx"
+                    DependentUpon = "wf_dativeicoloexit.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_deletecustodia.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_deletecustodia.aspx.vb"
+                    DependentUpon = "wf_deletecustodia.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_deletecustodia.aspx.resx"
+                    DependentUpon = "wf_deletecustodia.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_deleteinfrazioni.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_deleteinfrazioni.aspx.vb"
+                    DependentUpon = "wf_deleteinfrazioni.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_deleteinfrazioni.aspx.resx"
+                    DependentUpon = "wf_deleteinfrazioni.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_deleterimozione.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_deleterimozione.aspx.vb"
+                    DependentUpon = "wf_deleterimozione.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_deleterimozione.aspx.resx"
+                    DependentUpon = "wf_deleterimozione.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_deletevehicle.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_deletevehicle.aspx.vb"
+                    DependentUpon = "wf_deletevehicle.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_deletevehicle.aspx.resx"
+                    DependentUpon = "wf_deletevehicle.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_demolition.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_demolition.aspx.vb"
+                    DependentUpon = "wf_demolition.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_demolition.aspx.resx"
+                    DependentUpon = "wf_demolition.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_editcustodia.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_editcustodia.aspx.vb"
+                    DependentUpon = "wf_editcustodia.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_editcustodia.aspx.resx"
+                    DependentUpon = "wf_editcustodia.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_editinfrazioni.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_editinfrazioni.aspx.vb"
+                    DependentUpon = "wf_editinfrazioni.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_editinfrazioni.aspx.resx"
+                    DependentUpon = "wf_editinfrazioni.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_editrimozione.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_editrimozione.aspx.vb"
+                    DependentUpon = "wf_editrimozione.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_editrimozione.aspx.resx"
+                    DependentUpon = "wf_editrimozione.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_editviezone.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_editviezone.aspx.vb"
+                    DependentUpon = "wf_editviezone.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_editviezone.aspx.resx"
+                    DependentUpon = "wf_editviezone.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_exitvhnd.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_exitvhnd.aspx.vb"
+                    DependentUpon = "wf_exitvhnd.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_exitvhnd.aspx.resx"
+                    DependentUpon = "wf_exitvhnd.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_exitvrbd.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_exitvrbd.aspx.vb"
+                    DependentUpon = "wf_exitvrbd.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_exitvrbd.aspx.resx"
+                    DependentUpon = "wf_exitvrbd.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_exitvrbt.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_exitvrbt.aspx.vb"
+                    DependentUpon = "wf_exitvrbt.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_exitvrbt.aspx.resx"
+                    DependentUpon = "wf_exitvrbt.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_exitvrso.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_exitvrso.aspx.vb"
+                    DependentUpon = "wf_exitvrso.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_exitvrso.aspx.resx"
+                    DependentUpon = "wf_exitvrso.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_exitvrtr.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_exitvrtr.aspx.vb"
+                    DependentUpon = "wf_exitvrtr.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_exitvrtr.aspx.resx"
+                    DependentUpon = "wf_exitvrtr.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_exitvrvi.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_exitvrvi.aspx.vb"
+                    DependentUpon = "wf_exitvrvi.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_exitvrvi.aspx.resx"
+                    DependentUpon = "wf_exitvrvi.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_ferie.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_ferie.aspx.vb"
+                    DependentUpon = "wf_ferie.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_ferie.aspx.resx"
+                    DependentUpon = "wf_ferie.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_ferie_congedi.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_ferie_congedi.aspx.vb"
+                    DependentUpon = "wf_ferie_congedi.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_ferie_congedi.aspx.resx"
+                    DependentUpon = "wf_ferie_congedi.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_gestioneapprprenotazioni.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_gestioneapprprenotazioni.aspx.vb"
+                    DependentUpon = "wf_gestioneapprprenotazioni.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_gestioneapprprenotazioni.aspx.resx"
+                    DependentUpon = "wf_gestioneapprprenotazioni.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_gestioneblocchi.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_gestioneblocchi.aspx.vb"
+                    DependentUpon = "wf_gestioneblocchi.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_gestioneblocchi.aspx.resx"
+                    DependentUpon = "wf_gestioneblocchi.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_gestionecausaligiustificativi.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_gestionecausaligiustificativi.aspx.vb"
+                    DependentUpon = "wf_gestionecausaligiustificativi.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_gestionecausaligiustificativi.aspx.resx"
+                    DependentUpon = "wf_gestionecausaligiustificativi.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_gestionecongedi.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_gestionecongedi.aspx.vb"
+                    DependentUpon = "wf_gestionecongedi.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_gestionecongedi.aspx.resx"
+                    DependentUpon = "wf_gestionecongedi.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_gestioneGiornaliero.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_gestioneGiornaliero.aspx.vb"
+                    DependentUpon = "wf_gestioneGiornaliero.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_gestioneGiornaliero.aspx.resx"
+                    DependentUpon = "wf_gestioneGiornaliero.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_gestioneintervallipreno.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_gestioneintervallipreno.aspx.vb"
+                    DependentUpon = "wf_gestioneintervallipreno.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_gestioneintervallipreno.aspx.resx"
+                    DependentUpon = "wf_gestioneintervallipreno.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_gestioneperiodipreno.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_gestioneperiodipreno.aspx.vb"
+                    DependentUpon = "wf_gestioneperiodipreno.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_gestioneperiodipreno.aspx.resx"
+                    DependentUpon = "wf_gestioneperiodipreno.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_gestioneprenotazioni.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_gestioneprenotazioni.aspx.vb"
+                    DependentUpon = "wf_gestioneprenotazioni.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_gestioneprenotazioni.aspx.resx"
+                    DependentUpon = "wf_gestioneprenotazioni.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_giornaliero.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_giornaliero.aspx.vb"
+                    DependentUpon = "wf_giornaliero.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_giornaliero.aspx.resx"
+                    DependentUpon = "wf_giornaliero.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_giorniriposo.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_giorniriposo.aspx.vb"
+                    DependentUpon = "wf_giorniriposo.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_giorniriposo.aspx.resx"
+                    DependentUpon = "wf_giorniriposo.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_giorniriposoassistenti.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_giorniriposoassistenti.aspx.vb"
+                    DependentUpon = "wf_giorniriposoassistenti.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_giorniriposoassistenti.aspx.resx"
+                    DependentUpon = "wf_giorniriposoassistenti.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_GiorniSpecialiPS.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_GiorniSpecialiPS.aspx.vb"
+                    DependentUpon = "wf_GiorniSpecialiPS.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_GiorniSpecialiPS.aspx.resx"
+                    DependentUpon = "wf_GiorniSpecialiPS.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_giustificativi.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_giustificativi.aspx.vb"
+                    DependentUpon = "wf_giustificativi.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_giustificativi.aspx.resx"
+                    DependentUpon = "wf_giustificativi.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_giustificativigestori.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_giustificativigestori.aspx.vb"
+                    DependentUpon = "wf_giustificativigestori.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_giustificativigestori.aspx.resx"
+                    DependentUpon = "wf_giustificativigestori.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_gruppi.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_gruppi.aspx.vb"
+                    DependentUpon = "wf_gruppi.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_gruppi.aspx.resx"
+                    DependentUpon = "wf_gruppi.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_gruppiNew.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_gruppiNew.aspx.vb"
+                    DependentUpon = "wf_gruppiNew.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_gruppiNew.aspx.resx"
+                    DependentUpon = "wf_gruppiNew.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_gruppo.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_gruppo.aspx.vb"
+                    DependentUpon = "wf_gruppo.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_gruppo.aspx.resx"
+                    DependentUpon = "wf_gruppo.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_holidayedit.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_holidayedit.aspx.vb"
+                    DependentUpon = "wf_holidayedit.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_holidayedit.aspx.resx"
+                    DependentUpon = "wf_holidayedit.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_incassi.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_incassi.aspx.vb"
+                    DependentUpon = "wf_incassi.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_incassi.aspx.resx"
+                    DependentUpon = "wf_incassi.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_insertinfrazione.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_insertinfrazione.aspx.vb"
+                    DependentUpon = "wf_insertinfrazione.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_insertinfrazione.aspx.resx"
+                    DependentUpon = "wf_insertinfrazione.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_mancatatimbratura.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_mancatatimbratura.aspx.vb"
+                    DependentUpon = "wf_mancatatimbratura.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_mancatatimbratura.aspx.resx"
+                    DependentUpon = "wf_mancatatimbratura.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_mancatatimbraturaGestori.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_mancatatimbraturaGestori.aspx.vb"
+                    DependentUpon = "wf_mancatatimbraturaGestori.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_mancatatimbraturaGestori.aspx.resx"
+                    DependentUpon = "wf_mancatatimbraturaGestori.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_marchemodelli.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_marchemodelli.aspx.vb"
+                    DependentUpon = "wf_marchemodelli.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_marchemodelli.aspx.resx"
+                    DependentUpon = "wf_marchemodelli.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_modificapassword.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_modificapassword.aspx.vb"
+                    DependentUpon = "wf_modificapassword.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_modificapassword.aspx.resx"
+                    DependentUpon = "wf_modificapassword.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_modulo.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_modulo.aspx.vb"
+                    DependentUpon = "wf_modulo.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_modulo.aspx.resx"
+                    DependentUpon = "wf_modulo.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_monthseabo.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_monthseabo.aspx.vb"
+                    DependentUpon = "wf_monthseabo.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_monthseabo.aspx.resx"
+                    DependentUpon = "wf_monthseabo.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_newmain.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_newmain.aspx.vb"
+                    DependentUpon = "wf_newmain.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_newmain.aspx.resx"
+                    DependentUpon = "wf_newmain.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_notestampa.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_notestampa.aspx.vb"
+                    DependentUpon = "wf_notestampa.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_notestampa.aspx.resx"
+                    DependentUpon = "wf_notestampa.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_NuovoCongedo.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_NuovoCongedo.aspx.vb"
+                    DependentUpon = "wf_NuovoCongedo.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_NuovoCongedo.aspx.resx"
+                    DependentUpon = "wf_NuovoCongedo.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_ordinanze.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_ordinanze.aspx.vb"
+                    DependentUpon = "wf_ordinanze.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_ordinanze.aspx.resx"
+                    DependentUpon = "wf_ordinanze.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_ordinanzeEx.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_ordinanzeEx.aspx.vb"
+                    DependentUpon = "wf_ordinanzeEx.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_ordinanzeEx.aspx.resx"
+                    DependentUpon = "wf_ordinanzeEx.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_OrganicoAcc.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_OrganicoAcc.aspx.vb"
+                    DependentUpon = "wf_OrganicoAcc.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_OrganicoAcc.aspx.resx"
+                    DependentUpon = "wf_OrganicoAcc.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_Parcheggi.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_Parcheggi.aspx.vb"
+                    DependentUpon = "wf_Parcheggi.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_Parcheggi.aspx.resx"
+                    DependentUpon = "wf_Parcheggi.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_permessi.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_permessi.aspx.vb"
+                    DependentUpon = "wf_permessi.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_permessi.aspx.resx"
+                    DependentUpon = "wf_permessi.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_permessiNew.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_permessiNew.aspx.vb"
+                    DependentUpon = "wf_permessiNew.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_permessiNew.aspx.resx"
+                    DependentUpon = "wf_permessiNew.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_pianososta.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_pianososta.aspx.vb"
+                    DependentUpon = "wf_pianososta.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_pianososta.aspx.resx"
+                    DependentUpon = "wf_pianososta.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_PrenotazioneFerie.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_PrenotazioneFerie.aspx.vb"
+                    DependentUpon = "wf_PrenotazioneFerie.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_PrenotazioneFerie.aspx.resx"
+                    DependentUpon = "wf_PrenotazioneFerie.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_pubblicariposi.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_pubblicariposi.aspx.vb"
+                    DependentUpon = "wf_pubblicariposi.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_pubblicariposi.aspx.resx"
+                    DependentUpon = "wf_pubblicariposi.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_questionario.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_questionario.aspx.vb"
+                    DependentUpon = "wf_questionario.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_questionario.aspx.resx"
+                    DependentUpon = "wf_questionario.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_reportBussm.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_reportBussm.aspx.vb"
+                    DependentUpon = "wf_reportBussm.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_reportBussm.aspx.resx"
+                    DependentUpon = "wf_reportBussm.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_reportpresenze.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_reportpresenze.aspx.vb"
+                    DependentUpon = "wf_reportpresenze.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_reportpresenze.aspx.resx"
+                    DependentUpon = "wf_reportpresenze.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_ricavisosta.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_ricavisosta.aspx.vb"
+                    DependentUpon = "wf_ricavisosta.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_ricavisosta.aspx.resx"
+                    DependentUpon = "wf_ricavisosta.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_rptincassi.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_rptincassi.aspx.vb"
+                    DependentUpon = "wf_rptincassi.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_rptincassi.aspx.resx"
+                    DependentUpon = "wf_rptincassi.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_rptuscite.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_rptuscite.aspx.vb"
+                    DependentUpon = "wf_rptuscite.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_rptuscite.aspx.resx"
+                    DependentUpon = "wf_rptuscite.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_rsgiornaliero.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_rsgiornaliero.aspx.vb"
+                    DependentUpon = "wf_rsgiornaliero.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_rsgiornaliero.aspx.resx"
+                    DependentUpon = "wf_rsgiornaliero.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_sessiondetail.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_sessiondetail.aspx.vb"
+                    DependentUpon = "wf_sessiondetail.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_sessiondetail.aspx.resx"
+                    DependentUpon = "wf_sessiondetail.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_sessionsdata.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_sessionsdata.aspx.vb"
+                    DependentUpon = "wf_sessionsdata.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_sessionsdata.aspx.resx"
+                    DependentUpon = "wf_sessionsdata.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_shadowvehicle.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_shadowvehicle.aspx.vb"
+                    DependentUpon = "wf_shadowvehicle.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_shadowvehicle.aspx.resx"
+                    DependentUpon = "wf_shadowvehicle.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_sintesi.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_sintesi.aspx.vb"
+                    DependentUpon = "wf_sintesi.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_sintesi.aspx.resx"
+                    DependentUpon = "wf_sintesi.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_spostamentoRiposo.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_spostamentoRiposo.aspx.vb"
+                    DependentUpon = "wf_spostamentoRiposo.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_spostamentoRiposo.aspx.resx"
+                    DependentUpon = "wf_spostamentoRiposo.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_stalli.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_stalli.aspx.vb"
+                    DependentUpon = "wf_stalli.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_stalli.aspx.resx"
+                    DependentUpon = "wf_stalli.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_stampaANAautoparchimetri.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_stampaANAautoparchimetri.aspx.vb"
+                    DependentUpon = "wf_stampaANAautoparchimetri.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_stampaANAautoparchimetri.aspx.resx"
+                    DependentUpon = "wf_stampaANAautoparchimetri.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_stampaautoparchimetri.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_stampaautoparchimetri.aspx.vb"
+                    DependentUpon = "wf_stampaautoparchimetri.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_stampaautoparchimetri.aspx.resx"
+                    DependentUpon = "wf_stampaautoparchimetri.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_stampariposi.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_stampariposi.aspx.vb"
+                    DependentUpon = "wf_stampariposi.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_stampariposi.aspx.resx"
+                    DependentUpon = "wf_stampariposi.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_statdetail.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_statdetail.aspx.vb"
+                    DependentUpon = "wf_statdetail.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_statdetail.aspx.resx"
+                    DependentUpon = "wf_statdetail.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_statgeneral.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_statgeneral.aspx.vb"
+                    DependentUpon = "wf_statgeneral.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_statgeneral.aspx.resx"
+                    DependentUpon = "wf_statgeneral.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_StatisticaBussm.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_StatisticaBussm.aspx.vb"
+                    DependentUpon = "wf_StatisticaBussm.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_StatisticaBussm.aspx.resx"
+                    DependentUpon = "wf_StatisticaBussm.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_statisticavie.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_statisticavie.aspx.vb"
+                    DependentUpon = "wf_statisticavie.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_statisticavie.aspx.resx"
+                    DependentUpon = "wf_statisticavie.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_statmonths.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_statmonths.aspx.vb"
+                    DependentUpon = "wf_statmonths.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_statmonths.aspx.resx"
+                    DependentUpon = "wf_statmonths.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_statuscite.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_statuscite.aspx.vb"
+                    DependentUpon = "wf_statuscite.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_statuscite.aspx.resx"
+                    DependentUpon = "wf_statuscite.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_statyears.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_statyears.aspx.vb"
+                    DependentUpon = "wf_statyears.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_statyears.aspx.resx"
+                    DependentUpon = "wf_statyears.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_StoricoSettoreSosta.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_StoricoSettoreSosta.aspx.vb"
+                    DependentUpon = "wf_StoricoSettoreSosta.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_StoricoSettoreSosta.aspx.resx"
+                    DependentUpon = "wf_StoricoSettoreSosta.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_tariffariocustodia.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_tariffariocustodia.aspx.vb"
+                    DependentUpon = "wf_tariffariocustodia.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_tariffariocustodia.aspx.resx"
+                    DependentUpon = "wf_tariffariocustodia.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_tariffarioinfrazioni.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_tariffarioinfrazioni.aspx.vb"
+                    DependentUpon = "wf_tariffarioinfrazioni.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_tariffarioinfrazioni.aspx.resx"
+                    DependentUpon = "wf_tariffarioinfrazioni.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_tariffariorimozione.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_tariffariorimozione.aspx.vb"
+                    DependentUpon = "wf_tariffariorimozione.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_tariffariorimozione.aspx.resx"
+                    DependentUpon = "wf_tariffariorimozione.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_TB_TURNI_AE.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_TB_TURNI_AE.aspx.vb"
+                    DependentUpon = "wf_TB_TURNI_AE.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_TB_TURNI_AE.aspx.resx"
+                    DependentUpon = "wf_TB_TURNI_AE.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_TbTurni.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_TbTurni.aspx.vb"
+                    DependentUpon = "wf_TbTurni.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_TbTurni.aspx.resx"
+                    DependentUpon = "wf_TbTurni.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_TitoliSosta.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_TitoliSosta.aspx.vb"
+                    DependentUpon = "wf_TitoliSosta.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_TitoliSosta.aspx.resx"
+                    DependentUpon = "wf_TitoliSosta.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_utente.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_utente.aspx.vb"
+                    DependentUpon = "wf_utente.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_utente.aspx.resx"
+                    DependentUpon = "wf_utente.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_utenti.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_utenti.aspx.vb"
+                    DependentUpon = "wf_utenti.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_utenti.aspx.resx"
+                    DependentUpon = "wf_utenti.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_utentiNew.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_utentiNew.aspx.vb"
+                    DependentUpon = "wf_utentiNew.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_utentiNew.aspx.resx"
+                    DependentUpon = "wf_utentiNew.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_viewcustodia.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_viewcustodia.aspx.vb"
+                    DependentUpon = "wf_viewcustodia.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_viewcustodia.aspx.resx"
+                    DependentUpon = "wf_viewcustodia.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_viewdeposito.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_viewdeposito.aspx.vb"
+                    DependentUpon = "wf_viewdeposito.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_viewdeposito.aspx.resx"
+                    DependentUpon = "wf_viewdeposito.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_viewdeposito1.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_viewdeposito1.aspx.vb"
+                    DependentUpon = "wf_viewdeposito1.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_viewdeposito1.aspx.resx"
+                    DependentUpon = "wf_viewdeposito1.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_viewinfrazioni.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_viewinfrazioni.aspx.vb"
+                    DependentUpon = "wf_viewinfrazioni.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_viewinfrazioni.aspx.resx"
+                    DependentUpon = "wf_viewinfrazioni.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_viewrimozione.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_viewrimozione.aspx.vb"
+                    DependentUpon = "wf_viewrimozione.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_viewrimozione.aspx.resx"
+                    DependentUpon = "wf_viewrimozione.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_viewstallixvia.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_viewstallixvia.aspx.vb"
+                    DependentUpon = "wf_viewstallixvia.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_viewstallixvia.aspx.resx"
+                    DependentUpon = "wf_viewstallixvia.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_visualizzaGiornaliero.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_visualizzaGiornaliero.aspx.vb"
+                    DependentUpon = "wf_visualizzaGiornaliero.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_visualizzaGiornaliero.aspx.resx"
+                    DependentUpon = "wf_visualizzaGiornaliero.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_welcome.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_welcome.aspx.vb"
+                    DependentUpon = "wf_welcome.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_welcome.aspx.resx"
+                    DependentUpon = "wf_welcome.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "wf_welcomeSETTORESOSTAWEB.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "wf_welcomeSETTORESOSTAWEB.aspx.vb"
+                    DependentUpon = "wf_welcomeSETTORESOSTAWEB.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "wf_welcomeSETTORESOSTAWEB.aspx.resx"
+                    DependentUpon = "wf_welcomeSETTORESOSTAWEB.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <Folder RelPath = "Attachments\" />
+                <File
+                    RelPath = "images\Accertatori.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\activate.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\AddANA.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\ATC.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\attachment.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\attachmentw.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\cerca.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\corner_bl.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\corner_br.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\corner_tl.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\corner_tr.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\DataIngresso.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\deactivate.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\delete.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\Depositeria.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\DescrAuto.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\File.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\File_Add.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\File_Cancel.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\File_Delete.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\File_Edit.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\File_Save.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\File_View.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\footer.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\freccia_inv.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\frecciadx.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\header.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\header_fondo.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\header_riga.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\header2.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\hidetoc.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\Impost.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\lavori.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\Login.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\logo_ATC.jpg"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\logo_innovatech_mini.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\logo_TPER.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\logoATC.jpg"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\note.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\ordinanza.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\Ordinanze.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\PianiSosta.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\qlink_angolo.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\qlink_fondo.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\showtoc.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\spacer.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\Targa.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\Tipo.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\VAREmilia.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\Verbale.gif"
+                    BuildAction = "Content"
+                />
+                <Folder
+                    RelPath = "Web References\"
+                    WebReferences = "TRUE"
+                />
+            </Include>
+        </Files>
+    </VisualBasic>
+</VisualStudioProject>
+

@@ -1,0 +1,84 @@
+<?xml version="1.0" standalone="yes" ?>
+<xs:schema id="DsStalli" targetNamespace="http://www.tempuri.org/DsStalli.xsd" xmlns:mstns="http://www.tempuri.org/DsStalli.xsd"
+	xmlns="http://www.tempuri.org/DsStalli.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+	<xs:element name="DsStalli" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Settori">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Id_SZF" type="xs:int" />
+							<xs:element name="Id_ZonaSettoreUnico" type="xs:int" minOccurs="0" />
+							<xs:element name="Desc_Settore" type="xs:string" minOccurs="0" />
+							<xs:element name="Desc_Dettaglio_Settore" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="StradarioBologna">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="cod_prov" type="xs:int" />
+							<xs:element name="cod_comune" type="xs:int" />
+							<xs:element name="Codice" type="xs:int" />
+							<xs:element name="Nome" type="xs:string" minOccurs="0" />
+							<xs:element name="SettoreZona" type="xs:short" minOccurs="0" />
+							<xs:element name="Guid" msdata:DataType="System.Guid, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+								type="xs:string" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="StalliNoteSt">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Id" msdata:DataType="System.Guid, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+								type="xs:string" />
+							<xs:element name="Nota" type="xs:string" minOccurs="0" />
+							<xs:element name="Data" type="xs:dateTime" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Stalli">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="CivKey" type="xs:int" minOccurs="0" />
+							<xs:element name="Via" type="xs:string" minOccurs="0" />
+							<xs:element name="Note" type="xs:string" minOccurs="0" />
+							<xs:element name="Blu" type="xs:int" minOccurs="0" />
+							<xs:element name="Verde" type="xs:int" minOccurs="0" />
+							<xs:element name="Handi" type="xs:int" minOccurs="0" />
+							<xs:element name="Residenti" type="xs:int" minOccurs="0" />
+							<xs:element name="RiservatoGenerico" type="xs:int" minOccurs="0" />
+							<xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="CaricoScarico" type="xs:int" minOccurs="0" />
+							<xs:element name="Moto" type="xs:int" minOccurs="0" />
+							<xs:element name="discoorario" type="xs:int" minOccurs="0" />
+							<xs:element name="sospesi" type="xs:int" minOccurs="0" />
+							<xs:element name="Settore" type="xs:string" minOccurs="0" />
+							<xs:element name="libera" type="xs:int" minOccurs="0" />
+							<xs:element name="ID_SZF" type="xs:int" minOccurs="0" />
+							<xs:element name="Nome" type="xs:string" minOccurs="0" />
+							<xs:element name="Desc_Settore" type="xs:string" minOccurs="0" />
+							<xs:element name="Desc_Dettaglio_Settore" type="xs:string" minOccurs="0" />
+							<xs:element name="Carsharing" type="xs:int" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="Constraint1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:StradarioBologna" />
+			<xs:field xpath="mstns:cod_prov" />
+			<xs:field xpath="mstns:cod_comune" />
+			<xs:field xpath="mstns:Codice" />
+		</xs:unique>
+		<xs:unique name="StalliNoteSt_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:StalliNoteSt" />
+			<xs:field xpath="mstns:Id" />
+		</xs:unique>
+		<xs:key name="DsStalliKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Stalli" />
+			<xs:field xpath="mstns:id" />
+		</xs:key>
+	</xs:element>
+</xs:schema>

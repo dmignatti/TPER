@@ -1,0 +1,81 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="DsCarSharing" targetNamespace="http://www.tempuri.org/DsCarSharing.xsd" xmlns:mstns="http://www.tempuri.org/DsCarSharing.xsd" xmlns="http://www.tempuri.org/DsCarSharing.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="DsCarSharing" msdata:IsDataSet="true">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="Consumi">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+              <xs:element name="IdCentroCCS" type="xs:int" minOccurs="0" />
+              <xs:element name="IdGruppoCCS" type="xs:int" minOccurs="0" />
+              <xs:element name="Data" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Valore" type="xs:double" minOccurs="0" />
+              <xs:element name="DataCreazione" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CentroCS" type="xs:string" minOccurs="0" />
+              <xs:element name="GruppoCS" type="xs:string" minOccurs="0" />
+              <xs:element name="OrdineC" type="xs:int" minOccurs="0" />
+              <xs:element name="OrdineG" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CS_Gruppi">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdGruppoCS" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+              <xs:element name="GruppoCS" type="xs:string" minOccurs="0" />
+              <xs:element name="OrdineG" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CarSharing">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msdata:DataType="System.Guid, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" />
+              <xs:element name="Data" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Incassi" type="xs:double" minOccurs="0" />
+              <xs:element name="KmMese" type="xs:int" minOccurs="0" />
+              <xs:element name="TempoUt" type="xs:int" minOccurs="0" />
+              <xs:element name="N_Corse" type="xs:int" minOccurs="0" />
+              <xs:element name="N_Auto" type="xs:int" minOccurs="0" />
+              <xs:element name="N_Parcheggi" type="xs:int" minOccurs="0" />
+              <xs:element name="N_Utenti" type="xs:int" minOccurs="0" />
+              <xs:element name="DataCreazione" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CS">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msdata:DataType="System.Guid, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" />
+              <xs:element name="Data" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Incassi" type="xs:double" minOccurs="0" />
+              <xs:element name="DataCreazione" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="KmMese" type="xs:double" minOccurs="0" />
+              <xs:element name="TempoUt" type="xs:double" minOccurs="0" />
+              <xs:element name="N_Corse" type="xs:int" minOccurs="0" />
+              <xs:element name="N_AutoCosta" type="xs:int" minOccurs="0" />
+              <xs:element name="N_ParcheggiCosta" type="xs:int" minOccurs="0" />
+              <xs:element name="N_Utenti_tessere" type="xs:int" minOccurs="0" />
+              <xs:element name="N_Utenti" type="xs:int" minOccurs="0" />
+              <xs:element name="N_Parcheggi" type="xs:int" minOccurs="0" />
+              <xs:element name="N_Auto" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:CS_Gruppi" />
+      <xs:field xpath="mstns:IdGruppoCS" />
+    </xs:unique>
+    <xs:unique name="CarSharing_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:CarSharing" />
+      <xs:field xpath="mstns:Id" />
+    </xs:unique>
+    <xs:unique name="CS_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:CS" />
+      <xs:field xpath="mstns:Id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,12 @@
+@page {margin: 5mm 6mm 5mm 8mm; width: 210mm; height: 297mm}
+
+#imgDailyHeader 
+{
+	float: left;
+}
+
+.dailyHeader {font-family: Verdana; font-size: 4mm}
+.dailyHeader2 {font-family: Verdana; font-size: 3mm}
+.dailyHeader3 {font-family: Verdana; font-size: 3mm; text-transform: uppercase}
+.dailyHeaderTurni {font-family: Verdana; font-size: 4mm; font-weight: bold}
+.dailyHeaderAgenti {font-family: Times New Roman; font-size: 3mm; font-weight: bold; text-transform: uppercase}

@@ -1,0 +1,63 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="DsAutoPV" targetNamespace="http://www.tempuri.org/DsAutoPV.xsd" xmlns:mstns="http://www.tempuri.org/DsAutoPV.xsd" xmlns="http://www.tempuri.org/DsAutoPV.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="DsAutoPV" msdata:IsDataSet="true">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="CarSharing">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msdata:DataType="System.Guid, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" />
+              <xs:element name="Data" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Incassi" type="xs:double" minOccurs="0" />
+              <xs:element name="KmMese" type="xs:int" minOccurs="0" />
+              <xs:element name="TempoUt" type="xs:int" minOccurs="0" />
+              <xs:element name="N_Corse" type="xs:int" minOccurs="0" />
+              <xs:element name="N_Auto" type="xs:int" minOccurs="0" />
+              <xs:element name="N_Parcheggi" type="xs:int" minOccurs="0" />
+              <xs:element name="N_Utenti" type="xs:int" minOccurs="0" />
+              <xs:element name="DataCreazione" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Autoparchimetri">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msdata:DataType="System.Guid, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" />
+              <xs:element name="Data" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="AcquistiATC" type="xs:int" minOccurs="0" />
+              <xs:element name="AcquistiDSI" type="xs:int" minOccurs="0" />
+              <xs:element name="VenditeSTD" type="xs:int" minOccurs="0" />
+              <xs:element name="VenditeDSI" type="xs:int" minOccurs="0" />
+              <xs:element name="ResiSTD" type="xs:int" minOccurs="0" />
+              <xs:element name="ResiDSI" type="xs:int" minOccurs="0" />
+              <xs:element name="DataCreazione" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="AutoParchimetriNew">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" msdata:DataType="System.Guid, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" />
+              <xs:element name="Data" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="AcquistiATC" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+              <xs:element name="AcquistiDSI" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+              <xs:element name="VenditeSTD" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+              <xs:element name="VenditeDSI" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+              <xs:element name="ResiSTD" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+              <xs:element name="ResiDSI" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+              <xs:element name="DataCreazione" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:CarSharing" />
+      <xs:field xpath="mstns:Id" />
+    </xs:unique>
+    <xs:unique name="Autoparchimetri_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Autoparchimetri" />
+      <xs:field xpath="mstns:Id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,1621 @@
+.TabellaPrincipale
+{
+	border-top: #ffffff 1px solid;
+	border-bottom: #ffffff 1px solid;
+	border-right-style: none;
+	border-left-style: none;
+}
+.Label, LABEL
+{
+	font-size: 8pt;
+	color: #666666;
+	font-style: normal;
+	font-family: Verdana, Sans-Serif;
+}
+
+.TitleLabel
+{
+	font-size: 8pt;
+	color: #666666;
+	font-style: normal;
+	font-family: Verdana, Sans-Serif;
+	font-weight: bold;
+}
+.titlelabelq
+{
+	font-size: 9pt;
+	color: #242424;
+
+	font-style: normal;
+	font-family: Verdana, Sans-Serif;
+	font-weight: bold;
+}
+.labelq
+{
+	font-size: 8pt;
+	color: #2a2a2a;
+	font-style: normal;
+	font-family: Verdana, Sans-Serif;
+	font-weight: bold;
+}
+.titoloq1
+{	
+	
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:	.9em;
+	font-weight:	normal;
+	font-style:	normal;
+	text-decoration:	none;
+	word-spacing:	normal;
+	letter-spacing:	normal;
+	text-transform:	none;
+	margin: 0;
+}
+.titoloq2
+{	
+	color:#970220;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:	11pt;
+	font-weight:	bolder;
+	font-style:	normal;
+	text-decoration:	none;
+	word-spacing:	normal;
+	letter-spacing:	normal;
+	text-transform:	none;
+	margin: 0;
+}
+		
+.TextFieldInput
+{
+	border-right: #999999 1px solid;
+	border-top: #999999 1px solid;
+	font-size: 8pt;
+	border-left: #999999 1px solid;
+	border-bottom: #999999 1px solid;
+	font-style: normal;
+	font-family: Verdana, Sans-Serif;
+	text-decoration: none;
+}
+/*.Bottone
+{
+	border-right: #666666 1px solid;
+	padding-right: 12px;
+	border-top: #666666 1px solid;
+	padding-left: 12px;
+	font-weight: lighter;
+	font-size: 8pt;
+	border-left: #666666 1px solid;
+	cursor: hand;
+	color: white;
+	border-bottom: #666666 1px solid;
+	font-family: Tahoma;
+	background-color: #7b7c81;
+	text-align: center;
+	text-decoration: none;
+}*/
+.Bottone 
+{
+	height: 20px;
+	font-size: 8pt;
+}
+.Messaggi
+{
+	border-right: #ffffff 1px solid;
+	padding-right: 12px;
+	border-top: #ffffff 1px solid;
+	padding-left: 12px;
+	font-weight: lighter;
+	font-size: 8pt;
+	border-left: #ffffff 1px solid;
+	cursor: hand;
+	color: #941045;
+	border-bottom: #ffffff 1px solid;
+	font-family: Verdana, Sans-Serif;
+	background-color: #ffffff;
+}
+A:link
+{
+	text-decoration: none;
+}
+A:visited
+{
+	text-decoration: none;
+}
+.griglia
+{
+	border-right: #CCCCCC 1px solid;
+	border-top: #CCCCCC 1px solid;
+	border-left: #CCCCCC 1px solid;
+	border-bottom: #CCCCCC 1px solid;
+}
+.RigaDataGrid
+{
+	font-family: Verdana, Sans-Serif;
+	font-size: 11px;
+}
+.descrizione
+{
+	font-family: Verdana, Sans-Serif;
+	font-size: 11px;
+	color: #333333;
+}
+.Titolo
+{
+	font-size: 10pt;
+	color: menutext;
+	font-style: normal;
+	font-family: Verdana, Sans-Serif;
+}
+.Header0
+{
+	color: Black;
+	font-family: Verdana, Sans-Serif;
+	font-size: 12pt;
+	font-style: normal;
+	font-weight: bold;
+}
+.Header1
+{
+	color: Black;
+	font-family: Verdana, Sans-Serif;
+	font-size: 10pt;
+	font-style: normal;
+	font-weight: bold;
+}
+.Header2
+{
+	color: Black;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: bold;
+	padding: 0;
+}
+.Header3
+{
+	color: Black;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: bold;
+}
+.DTPicker_TextBox
+{
+	background-color: White;
+	color: Black;
+	border-left: #999999 1px solid;
+	border-top: #999999 1px solid;
+	border-right: #999999 1px solid;
+	border-bottom: #999999 1px solid;
+	font-style: normal;
+	font-size: 8pt;
+	font-family: Verdana, Sans-Serif;
+	text-decoration: none;
+	text-align: center;
+	width: 100%;
+	height: auto;
+}
+.DTPicker_Button
+{
+	background-color: Gainsboro;
+	color: Black;
+	border: #999999 1px solid;
+	font-style: normal;
+	font-size: 8pt;
+	font-weight: bold;
+	font-family: Verdana, Sans-Serif;
+	text-decoration: none;
+	width: 100%;
+	height: auto;
+}
+.GRD_Header
+{
+	background-color: Firebrick;
+	color: White;
+	border-left: #999999 1px solid;
+	border-top: #999999 1px solid;
+	border-right: #999999 1px solid;
+	border-bottom: #999999 1px solid;
+	font-style: normal;
+	font-size: 8pt;
+	font-family: Verdana, Sans-Serif;
+}
+.GRD_BodyOdd
+{
+	background-color: White;
+	color: Black;
+	border-left: #999999 1px solid;
+	border-top: #999999 1px solid;
+	border-right: #999999 1px solid;
+	border-bottom: #999999 1px solid;
+	font-style: normal;
+	font-size: 8pt;
+	font-family: Verdana, Sans-Serif;
+}
+.GRD_BodyEven
+{
+	background-color: Gainsboro;
+	color: Black;
+	border-left: #999999 1px solid;
+	border-top: #999999 1px solid;
+	border-right: #999999 1px solid;
+	border-bottom: #999999 1px solid;
+	font-style: normal;
+	font-size: 8pt;
+	font-family: Verdana, Sans-Serif;
+}
+.tbrMenu
+{
+	background-color: White;
+	color: Blue;
+	border-top: solid 1px DimGray;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: normal;
+	text-align: center;
+}
+.tbrMenu_SubMenu
+{
+	background-color: Gainsboro;
+	color: Black;
+	border-left: solid 1px DimGray;
+	border-top: solid 1px DimGray;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: normal;
+	text-align: left;
+}
+.tbrMenu_SubItem
+{
+	background-color: White;
+	color: Navy;
+	border-top: solid 1px Silver;
+	border-left: solid 1px Silver;
+	border-right: solid 1px DimGray;
+	border-bottom: solid 1px DimGray;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: normal;
+	text-align: center;
+}
+.MainTable
+{
+	border: solid 1px DimGray;
+	width: 760;
+}
+
+.supDTPicker_LRButton
+{
+	background-color: White;
+	color: DimGray;
+	border: solid 1 DimGray;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: bold;
+	text-align: center;
+	width: 100%;
+	height: auto;
+}
+
+.supDTPicker_UDButton
+{
+	background-color: White;
+	color: DimGray;
+	border: solid 1 DimGray;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: bold;
+	text-align: center;
+	width: 100%;
+	height: auto;
+}
+
+.supDTPicker_Label
+{
+	background-color: White;
+	color: DimGray;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: bold;
+	text-align: right;
+	height: auto;
+}
+.supDTPicker_CheckBox
+{
+	background-color: White;
+	color: DimGray;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: bold;
+	text-align: left;
+	width: 100%;
+	height: auto;
+}
+.supDTPicker_txtDay
+{
+	background-color: White;
+	color: Black;
+	border: solid 1 DimGray;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: bold;
+	text-align: center;
+	width: 100%;
+	height: auto;
+}
+
+.supDTPicker_ddlMonth
+{
+	background-color: White;
+	color: Black;
+	border: solid 1 DimGray;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: bold;
+	text-align: center;
+	width: 100%;
+	height: auto;
+}
+
+.supDTPicker_txtYear
+{
+	background-color: White;
+	color: Black;
+	border: solid 1 DimGray;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: bold;
+	text-align: center;
+	width: 100%;
+	height: auto;
+}
+
+.supDTPicker_Table
+{
+	background-color: White;
+	color: DimGray;
+	border: solid 1 DimGray;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: bold;
+	text-align: center;
+	height: auto;
+}
+.Button
+{
+	background-color: Silver;
+	color: Black;
+	border: outset 1px White;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-weight: bold;
+	font-style: normal;
+	cursor: hand;
+	text-align: center;
+	vertical-align: middle;
+	width: 80px;
+	height: 20px;
+}
+.FlatButton
+{
+	background-color: Gainsboro;
+	color: Black;
+	border: solid 1px DimGray;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-weight: normal;
+	font-style: normal;
+	cursor: hand;
+	text-align: center;
+	vertical-align: middle;
+	height: 20px;
+}
+.Link
+{
+  background-color: White;
+  border: none 0 White;
+	color: Blue;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-weight: bold;
+	font-style: normal;
+	cursor: hand;
+	text-align: center;
+	vertical-align: middle;
+	width: auto;
+	height: 20px;
+}
+.lblError
+{
+	color: FireBrick;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-weight: bold;
+	font-style: normal;
+	cursor: default;
+	text-align: center;
+	vertical-align: middle;
+	width: auto;
+	height: 20px;
+}
+.supHolidayConf_Table
+{
+	background-color: White;
+	color: Black;
+	border: solid 1px DimGray;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: normal;
+	text-align: center;
+	table-layout: fixed;
+	height: auto;
+}
+.supHolidayConf_Title
+{
+	color: Black;
+	border-bottom: solid 1px DimGray;
+	font-family: Verdana, Sans-Serif;
+	font-size: 12pt;
+	font-style: normal;
+	font-weight: bold;
+	text-align: center;
+}
+.supHolidayConf_Message
+{
+	color: Firebrick;
+	border-bottom: solid 1px DimGray;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: bold;
+	text-align: center;
+}
+.supHolidayConf_ColTitle
+{
+	background-color: Firebrick;
+	color: White;
+	border-right: solid 1px Gainsboro;
+	border-bottom: solid 1px DimGray;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: normal;
+	text-align: left;
+	text-indent: 2px;
+	width: 100%;
+	height: auto;
+}
+.supHolidayConf_Cell
+{
+	background-color: White;
+	color: Black;
+	border: solid 1px DimGray;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: normal;
+	text-align: left;
+	text-indent: 2px;
+}
+.supHolidayConf_InputCtl
+{
+	background-color: White;
+	color: Black;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: normal;
+	text-align: left;
+	text-indent: 2px;
+	width: 100%;
+	height: auto;
+}
+
+.supCalendarSeabo_Table
+{
+	background-color: White;
+	color: Black;
+	border-top: solid 1px DimGray;
+	border-left: solid 1px DimGray;
+	font-family: Verdana, Sans-Serif;
+	font-size: 10pt;
+	font-style: normal;
+	font-weight: normal;
+	text-align: center;
+	table-layout: fixed;
+	width: 100%;
+	height: auto;
+}
+.supCalendarSeabo_CellDate
+{
+	color: Black;
+	border-right: solid 1px DimGray;
+	border-bottom: solid 1px DimGray;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: normal;
+	text-align: left;
+	text-indent: 2px;
+}
+.supCalendarSeabo_CellHoliday
+{
+	color: Firebrick;
+	border-right: solid 1px DimGray;
+	border-bottom: solid 1px DimGray;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: normal;
+	text-align: left;
+	text-indent: 2px;
+}
+.supCalendarSeabo_CellCheck
+{
+	color: Black;
+	border-right: solid 1px DimGray;
+	border-bottom: solid 1px DimGray;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: normal;
+	text-align: center;
+}
+.supCalendarSeabo_CellSeparator
+{
+	background-color: Gainsboro;
+	color: Black;
+	border-right: solid 1px DimGray;
+	border-bottom: solid 1px DimGray;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: normal;
+	text-align: center;
+}
+.supCalendarSeabo_Button
+{
+	background-color: White;
+	color: SteelBlue;
+	border: none 0 White;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: bold;
+	text-align: center;
+	width: 100%;
+	height: 30px;
+	cursor: hand;
+}
+.supCalendarSeabo_Title
+{
+	color: Black;
+	border-bottom: solid 1px DimGray;
+	font-family: Verdana, Sans-Serif;
+	font-size: 12pt;
+	font-style: normal;
+	font-weight: bold;
+	text-align: center;
+}
+.supStat_CellNumber
+{
+	color: Black;
+	border-bottom: solid 1 DimGray;
+	border-left: solid 1 DimGray;
+	border-collapse: collapse;
+	font-family: Verdana, Sans-Serif;
+	font-size: 7pt;
+	font-style: normal;
+	font-weight: normal;
+	text-align: right;
+	width: 30%;
+}
+.supStat_CellText
+{
+	color: Firebrick;
+	border-bottom: solid 1 DimGray;
+	border-collapse: collapse;
+	font-family: Verdana, Sans-Serif;
+	font-size: 7pt;
+	font-style: normal;
+	font-weight: normal;
+	text-align: left;
+	width: 40%;
+}
+.supStat_CellSubTitle
+{
+	color: Firebrick;
+	border-bottom: solid 1 DimGray;
+	border-left: solid 1 DimGray;
+	border-collapse: collapse;
+	font-family: Verdana, Sans-Serif;
+	font-size: 7pt;
+	font-style: normal;
+	font-weight: normal;
+	text-align: left;
+	width: 30%;
+}
+.supStat_CellTitle
+{
+	color: Blue;
+	border-bottom: solid 1 DimGray;
+	border-collapse: collapse;
+	font-family: Verdana, Sans-Serif;
+	font-size: 7pt;
+	font-style: normal;
+	font-weight: normal;
+	text-align: center;
+	width: 100%;
+}
+.supStat_CellTable
+{
+	color: Black;
+	border-top: solid 1px DimGray;
+	border-left: solid 1px DimGray;
+	border-right: solid 1px DimGray;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: normal;
+	table-layout: fixed;
+	width: 100%;
+	height: auto;
+}
+.supStat_TableFirstCell
+{
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: normal;
+	width: 10%;
+	height: auto;
+}
+.supStat_TableCell
+{
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: normal;
+	width: 30%;
+	height: auto;
+}
+.supStat_TableRow
+{
+	background-color: White;
+	width: 100%;
+	height: auto;
+}
+.supStat_TableRow_F1
+{
+	background-color: #ffffcc;
+	width: 100%;
+	height: auto;
+}
+.supStat_TableRow_F2
+{
+	background-color: #ccffcc;
+	width: 100%;
+	height: auto;
+}
+.supStat_TableRow_F3
+{
+	background-color: #ccffff;
+	width: 100%;
+	height: auto;
+}
+.supStat_Table
+{
+	border: solid 1 DimGray;
+	width: 650px;
+	height: auto;
+}
+.supStat_TableTitle
+{
+	color: Firebrick;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: normal;
+	text-align: left;
+}
+
+.supGDATCSession_Table
+{
+	background-color: Gainsboro;
+	color: Black;
+	border: solid 1 DimGray;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: normal;
+	text-align: left;
+	text-indent: 2px;
+	width: auto;
+}
+.supGDATCSession_ItemTable
+{
+	background-color: Gainsboro;
+	color: Black;
+	border-top: solid 1 DimGray;
+	border-left: solid 1 DimGray;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: bold;
+	text-align: left;
+	text-indent: 10px;
+	table-layout: fixed;
+}
+.supGDATCSession_ItemTitle
+{
+	background-color: DimGray;
+	color: White;
+	border-right: solid 1 DimGray;
+	border-bottom: solid 1 DimGray;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: bold;
+	text-align: left;
+	text-indent: 10px;
+	table-layout: fixed;
+}
+.supGDATCSession_DetailTitle0
+{
+	background-color: Gainsboro;
+	color: Black;
+	border-right: solid 1 DimGray;
+	border-bottom: solid 1 DimGray;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: normal;
+	text-align: center;
+	text-indent: 2px;
+}
+.supGDATCSession_DetailTitle1
+{
+	background-color: Gainsboro;
+	color: Black;
+	border-right: solid 1 DimGray;
+	border-bottom: solid 1 DimGray;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: normal;
+	text-align: left;
+	text-indent: 2px;
+}
+.supGDATCSession_DetailTitle2
+{
+	background-color: Gainsboro;
+	color: Black;
+	border-right: solid 1 DimGray;
+	border-bottom: solid 1 DimGray;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: normal;
+	text-align: right;
+	text-indent: 2px;
+}
+.supGDATCSession_DetailRight
+{
+	background-color: White;
+	color: Black;
+	border-right: solid 1 DimGray;
+	border-bottom: solid 1 DimGray;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: normal;
+	text-align: right;
+	text-indent: 2px;
+}
+.supGDATCSession_DetailLeft
+{
+	background-color: White;
+	color: Black;
+	border-right: solid 1 DimGray;
+	border-bottom: solid 1 DimGray;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: normal;
+	text-align: left;
+	text-indent: 2px;
+}
+.supGDATCSession_DetailCenter
+{
+	background-color: White;
+	color: Black;
+	border-right: solid 1 DimGray;
+	border-bottom: solid 1 DimGray;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: normal;
+	text-align: center;
+	text-indent: 2px;
+}
+.supGDATCSession_DetailLink
+{
+	background-color: White;
+	color: Blue;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: normal;
+	text-align: center;
+}
+.supGDATCSession_DetailSubTotal
+{
+	background-color: LemonChiffon;
+	color: Blue;
+	border-right: solid 1 DimGray;
+	border-bottom: solid 1 DimGray;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: normal;
+	text-align: right;
+	text-indent: 2px;
+}
+.supGDATCSession_DetailTotal
+{
+	background-color: LemonChiffon;
+	color: Firebrick;
+	border-right: solid 1 DimGray;
+	border-bottom: solid 1 DimGray;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: bold;
+	text-align: right;
+	text-indent: 2px;
+}
+.supNewInfr_Table
+{
+	background-color: Gainsboro;
+	color: DimGray;
+	border: solid 1 DimGray;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: bold;
+	text-align: Right;
+}
+.supNewInfr_Label
+{
+	background-color: Gainsboro;
+	color: DimGray;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: bold;
+	text-align: Right;
+}
+.supNewInfr_TextBox
+{
+	background-color: White;
+	color: Black;
+	border: solid 1 DimGray;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: normal;
+	text-align: left;
+	width: 100%;
+	height: 100%;
+}
+.supNewInfr_Date
+{
+	background-color: White;
+	color: Firebrick;
+	border: solid 1 DimGray;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: normal;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+}
+.supUpdInfr_TextBox
+{
+	background-color: White;
+	color: Blue;
+	border: none 0 White;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: normal;
+	text-align: left;
+	width: 100%;
+	height: 100%;
+}
+
+
+
+
+.supTarf_Title
+{
+	background-color: Gainsboro;
+	color: Black;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: bold;
+	text-align: center;
+	text-indent: 2px;
+}
+.supTarf_ColHeader
+{
+	background-color: Gainsboro;
+	color: Black;
+	border-top: solid 1 DimGray;
+	border-right: solid 1 DimGray;
+	border-bottom: solid 1 DimGray;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: normal;
+	text-align: left;
+	text-indent: 2px;
+}
+
+.supTarf_Peso1Day_Text
+{
+	background-color: #ffffcc;
+	color: Black;
+	border-right: solid 1 DimGray;
+	border-bottom: solid 1 DimGray;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: normal;
+	text-align: left;
+	text-indent: 2px;
+}
+.supTarf_Peso1Day_Number
+{
+	background-color: #ffffcc;
+	color: Black;
+	border-right: solid 1 DimGray;
+	border-bottom: solid 1 DimGray;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: normal;
+	text-align: right;
+	text-indent: 2px;
+}
+.supTarf_Peso1Night_Text
+{
+	background-color: #ffffcc;
+	color: DimGray;
+	border-right: solid 1 DimGray;
+	border-bottom: solid 1 DimGray;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: normal;
+	text-align: left;
+	text-indent: 2px;
+}
+.supTarf_Peso1Night_Number
+{
+	background-color: #ffffcc;
+	color: DimGray;
+	border-right: solid 1 DimGray;
+	border-bottom: solid 1 DimGray;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: normal;
+	text-align: right;
+	text-indent: 2px;
+}
+
+.supTarf_Peso2Day_Text
+{
+	background-color: #ccffcc;
+	color: Black;
+	border-right: solid 1 DimGray;
+	border-bottom: solid 1 DimGray;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: normal;
+	text-align: left;
+	text-indent: 2px;
+}
+.supTarf_Peso2Day_Number
+{
+	background-color: #ccffcc;
+	color: Black;
+	border-right: solid 1 DimGray;
+	border-bottom: solid 1 DimGray;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: normal;
+	text-align: right;
+	text-indent: 2px;
+}
+.supTarf_Peso2Night_Text
+{
+	background-color: #ccffcc;
+	color: DimGray;
+	border-right: solid 1 DimGray;
+	border-bottom: solid 1 DimGray;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: normal;
+	text-align: left;
+	text-indent: 2px;
+}
+.supTarf_Peso2Night_Number
+{
+	background-color: #ccffcc;
+	color: DimGray;
+	border-right: solid 1 DimGray;
+	border-bottom: solid 1 DimGray;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: normal;
+	text-align: right;
+	text-indent: 2px;
+}
+.supTarf_Peso3Day_Text
+{
+	background-color: #ccffff;
+	color: Black;
+	border-right: solid 1 DimGray;
+	border-bottom: solid 1 DimGray;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: normal;
+	text-align: left;
+	text-indent: 2px;
+}
+.supTarf_Peso3Day_Number
+{
+	background-color: #ccffff;
+	color: Black;
+	border-right: solid 1 DimGray;
+	border-bottom: solid 1 DimGray;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: normal;
+	text-align: right;
+	text-indent: 2px;
+}
+.supTarf_Peso3Night_Text
+{
+	background-color: #ccffff;
+	color: DimGray;
+	border-right: solid 1 DimGray;
+	border-bottom: solid 1 DimGray;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: normal;
+	text-align: left;
+	text-indent: 2px;
+}
+.supTarf_Peso3Night_Number
+{
+	background-color: #ccffff;
+	color: DimGray;
+	border-right: solid 1 DimGray;
+	border-bottom: solid 1 DimGray;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: normal;
+	text-align: right;
+	text-indent: 2px;
+}
+.supTarf_TextBox
+{
+	background-color: White;
+	color: Blue;
+	border: none 0 White;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: normal;
+	text-align: right;
+	width: 100%;
+	height: 100%;
+}
+.supStat_DetailTable
+{
+	border-top: solid 1 Silver;
+	border-left: solid 1 Silver;
+	height: auto;
+}
+.supStat_DetailTitle
+{
+	background-color: Gainsboro;
+	color: Black;
+	border-bottom: solid 1 Silver;
+	border-right: solid 1 Silver;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: bold;
+	font-weight: normal;
+	text-indent: 5px;
+}
+.supStat_Detail_STRWDAY
+{
+	background-color: Gainsboro;
+	color: Black;
+	border-bottom: solid 1 Silver;
+	border-right: solid 1 Silver;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: normal;
+	text-indent: 5px;
+}
+.supStat_Detail_STRHDAY
+{
+	background-color: Gainsboro;
+	color: Firebrick;
+	border-bottom: solid 1 Silver;
+	border-right: solid 1 Silver;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: normal;
+	text-indent: 5px;
+}
+.supStat_Detail_WORKDAY
+{
+	background-color: White;
+	color: Black;
+	border-bottom: solid 1 Silver;
+	border-right: solid 1 Silver;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: normal;
+	text-indent: 5px;
+}
+.supStat_Detail_HOLIDAY
+{
+	background-color: White;
+	color: Firebrick;
+	border-bottom: solid 1 Silver;
+	border-right: solid 1 Silver;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: normal;
+	text-indent: 5px;
+}
+
+
+.Filter_Table
+{
+	background-color: White;
+	border: solid 1 DimGray;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+}
+.Filter_Button
+{
+	background-color: Gainsboro;
+	color: Black;
+	border: solid 1 DimGray;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: bold;
+	text-align: center;
+}
+.Filter_Label
+{
+	background-color: White;
+	color: DimGray;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+}
+.Filter_TextBox
+{
+	background-color: White;
+	color: Black;
+	border: normal;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+}
+.Filter_DropDownList
+{
+	background-color: White;
+	color: Black;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+}
+.Deposito_Table
+{
+	background-color: White;
+	border-top: solid 1 DimGray;
+	border-left: solid 1 DimGray;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+}
+.Deposito_HeaderCell
+{
+	background-color: Gainsboro;
+	border-right: solid 1 DimGray;
+	border-bottom: solid 1 DimGray;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+}
+.Deposito_DataCell
+{
+	background-color: White;
+	border-right: solid 1 DimGray;
+	border-bottom: solid 1 DimGray;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+}
+
+.supReportTable
+{
+	background-color: Gainsboro;
+	color: Black;
+	border-left: solid 1 DimGray;
+	border-top: solid 1 DimGray;
+	border-bottom: solid 1 DimGray;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+	text-indent: 2px;
+}
+.supReportHeader0
+{
+	background-color: White;
+	color: Black;
+	border-top: solid 1 DimGray;
+	border-right: solid 1 DimGray;
+	font-family: Verdana, Sans-Serif;
+	font-size: 12pt;
+	font-style: normal;
+	font-weight: bold;
+	text-indent: 2px;
+}
+.supReportHeader1
+{
+	background-color: White;
+	color: Black;
+	border-top: solid 1 DimGray;
+	border-right: solid 1 DimGray;
+	font-family: Verdana, Sans-Serif;
+	font-size: 10pt;
+	font-style: normal;
+	font-weight: bold;
+	text-indent: 2px;
+}
+.supReportHeader2
+{
+	background-color: White;
+	color: Black;
+	border-right: solid 1 DimGray;
+	border-top: solid 1 DimGray;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: bold;
+	text-indent: 2px;
+}
+.supReportVoid1
+{
+	background-color: White;
+	color: Black;
+	border-right: solid 1 DimGray;
+	font-family: Verdana, Sans-Serif;
+	font-size: 9pt;
+	font-style: normal;
+	font-weight: bold;
+	text-indent: 2px;
+}
+.supReportVoid2
+{
+	background-color: Gainsboro;
+	color: Black;
+	border-right: solid 1 DimGray;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: bold;
+	text-indent: 2px;
+}
+.supReportHeader3
+{
+	background-color: Gainsboro;
+	color: Black;
+	border-right: solid 1 DimGray;
+	border-top: solid 1 DimGray;
+	border-bottom: solid 1 DimGray;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: normal;
+	text-indent: 2px;
+}
+.supReportDetail
+{
+	background-color: White;
+	color: Black;
+	border-right: solid 1 DimGray;
+	border-bottom: solid 1 DimGray;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+	text-indent: 2px;
+	table-layout: fixed;
+}
+.supReportSubTotal
+{
+	background-color: LemonChiffon;
+	color: Blue;
+	border-right: solid 1 DimGray;
+	border-bottom: solid 1 DimGray;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+	text-indent: 2px;
+}
+.supReportTotal
+{
+	background-color: LemonChiffon;
+	color: Firebrick;
+	border-right: solid 1 DimGray;
+	border-bottom: solid 1 DimGray;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+	text-indent: 2px;
+}
+
+.supExitTable
+{
+	background-color: Gainsboro;
+	color: Black;
+	border: solid 1 DimGray;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+}
+.supExitHeader0
+{
+	background-color: Gainsboro;
+	color: Black;
+	font-family: Verdana, Sans-Serif;
+	font-size: 10pt;
+	font-style: normal;
+	font-weight: bold;
+}
+.supExitHeader1
+{
+	background-color: Gainsboro;
+	color: Black;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: bold;
+}
+.supExitHeader2
+{
+	background-color: Gainsboro;
+	color: Black;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+}
+.supExitTextBox
+{
+	background-color: White;
+	color: Black;
+	border: solid 1 DimGray;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+}
+.supExitTableCell
+{
+	background-color: White;
+	color: Black;
+	border-top: solid 1 DimGray;
+	border-left: solid 1 DimGray;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+}
+.supExitTableCellLR
+{
+	background-color: White;
+	color: Black;
+	border-top: solid 1 DimGray;
+	border-left: solid 1 DimGray;
+	border-bottom: solid 1 DimGray;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+}
+.supExitTableCellLC
+{
+	background-color: White;
+	color: Black;
+	border-top: solid 1 DimGray;
+	border-left: solid 1 DimGray;
+	border-right: solid 1 DimGray;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+}
+.supExitTableCellLRLC
+{
+	background-color: White;
+	color: Black;
+	border: solid 1 DimGray;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-style: normal;
+}
+.grid, .grid table
+{
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	background-color: #eeeeee;
+}
+.cal
+{
+	font-family:Arial Narrow;
+	font-size: 7pt;
+	background-color: #eeeeee;
+}
+.cal TH {background-color: #950000; color: White; font-weight: bold; text-align: left; white-space: nowrap}
+
+
+.cal TD
+{
+	border-bottom: solid 1px Silver;
+}
+.grid TH {background-color: #950000; color: White; font-weight: bold; text-align: left; white-space: nowrap}
+
+TD a
+{
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+}
+
+.toolBar {height: 28px; width: 100%; background-color: #DBD8D1; padding: 2px}
+
+.addButton {font-family: Verdana, Sans-Serif; font-size: 8pt}
+
+/* FT - !!! - Classe utilizzata per nascondere le textbox che servono come workaround */
+.Hidden
+{
+	visibility: hidden;
+	display: none;
+}
+
+.grid TD
+{
+	border-bottom: solid 1px Silver;
+}
+
+.Back 
+{
+	background-color: #E4E4E4;
+}
+	
+.Message
+{
+	background-color: #970220;
+	color: White;
+	font-weight: bold;
+	font-size: 8pt;
+	font-family: Verdana, Sans-Serif;
+}
+
+.BottomBorder
+{
+	border-bottom: solid 1px #999999;
+	padding: 6px 10px
+}
+
+.Box 
+{
+	border: solid 1px #999999;
+}
+
+.Error
+{
+	color: #970220;
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;
+	font-weight: bold;
+}
+
+.Header
+{
+	background-repeat: repeat-x;
+	background-image: url(images/header_fondo.gif);
+}
+
+.Logout
+{
+	white-space: nowrap;
+	text-align: center;
+	/*border: solid 1px black;*/
+}
+
+#tdLogout 
+{
+	/*border: solid 1px black;*/
+	background-repeat: repeat-x;
+	background-image: url(images/qlink_fondo.gif);	
+	height: 35px;
+}
+
+#lnkLogout
+{
+	color: White;
+	font-weight: bold;
+}
+
+#lnkLogout:hover
+{
+	color: White;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+#tdMenu
+{
+	padding: 15px 5px;
+	}
+	
+#TableMenu
+{
+	background-color: #E4E4E4;
+	}
+	
+input, select
+{
+	font-family: Verdana, Sans-Serif;
+	font-size: 8pt;	
+}
+.LnkbuttonImage
+{
+	text-decoration:underline;
+}

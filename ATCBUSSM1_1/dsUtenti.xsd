@@ -1,0 +1,120 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="dsUtenti" targetNamespace="http://www.tempuri.org/dsUtenti.xsd" xmlns:mstns="http://www.tempuri.org/dsUtenti.xsd" xmlns="http://www.tempuri.org/dsUtenti.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+    <xs:element name="dsUtenti" msdata:IsDataSet="true" msdata:Locale="it-IT">
+        <xs:complexType>
+            <xs:choice maxOccurs="unbounded">
+                <xs:element name="ATC_TipoUtente">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+                            <xs:element name="Descrizione" type="xs:string" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="GruppiDiAppartenenza">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="ID" msdata:ReadOnly="true" type="xs:int" />
+                            <xs:element name="Descrizione" type="xs:string" />
+                            <xs:element name="Abilitato" type="xs:boolean" minOccurs="0" />
+                            <xs:element name="EMail" type="xs:string" minOccurs="0" />
+                            <xs:element name="Amministrazione" type="xs:boolean" minOccurs="0" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="ATC_Gruppi">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="ID" msdata:ReadOnly="true" type="xs:int" />
+                            <xs:element name="Descrizione" type="xs:string" minOccurs="0" />
+                            <xs:element name="Abilitato" type="xs:boolean" default="true" minOccurs="0" />
+                            <xs:element name="EMail" type="xs:string" minOccurs="0" />
+                            <xs:element name="Amministrazione" type="xs:boolean" default="false" minOccurs="0" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="UtentiDelGruppo">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+                            <xs:element name="IDUser" type="xs:string" minOccurs="0" />
+                            <xs:element name="Pwd" type="xs:string" minOccurs="0" />
+                            <xs:element name="IDResponsabile" type="xs:int" minOccurs="0" />
+                            <xs:element name="Cognome" type="xs:string" minOccurs="0" />
+                            <xs:element name="Nome" type="xs:string" minOccurs="0" />
+                            <xs:element name="EMail" type="xs:string" minOccurs="0" />
+                            <xs:element name="Abilitato" type="xs:boolean" minOccurs="0" />
+                            <xs:element name="DataUltimoAccesso" type="xs:string" minOccurs="0" />
+                            <xs:element name="OraUltimoAccesso" type="xs:string" minOccurs="0" />
+                            <xs:element name="NrAccessi" type="xs:int" minOccurs="0" />
+                            <xs:element name="TipoUtente" type="xs:int" minOccurs="0" />
+                            <xs:element name="Flag_Patente" type="xs:boolean" minOccurs="0" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="GruppiDelModulo">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="ID" type="xs:int" />
+                            <xs:element name="Descrizione" type="xs:string" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="ATC_ModuliPortale">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+                            <xs:element name="Sect_Desc" type="xs:string" />
+                            <xs:element name="Descrizione" type="xs:string" />
+                            <xs:element name="Abilitato" type="xs:boolean" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="ATC_Utenti">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+                            <xs:element name="IDUser" type="xs:string" minOccurs="0" />
+                            <xs:element name="Pwd" type="xs:string" minOccurs="0" />
+                            <xs:element name="IDResponsabile" type="xs:int" minOccurs="0" />
+                            <xs:element name="Cognome" type="xs:string" minOccurs="0" />
+                            <xs:element name="Nome" type="xs:string" minOccurs="0" />
+                            <xs:element name="EMail" type="xs:string" minOccurs="0" />
+                            <xs:element name="Abilitato" type="xs:boolean" minOccurs="0" />
+                            <xs:element name="DataUltimoAccesso" type="xs:string" minOccurs="0" />
+                            <xs:element name="OraUltimoAccesso" type="xs:string" minOccurs="0" />
+                            <xs:element name="NrAccessi" type="xs:int" minOccurs="0" />
+                            <xs:element name="TipoUtente" type="xs:int" minOccurs="0" />
+                            <xs:element name="DescrizioneTipoUtente" type="xs:string" minOccurs="0" />
+                            <xs:element name="Flag_Patente" type="xs:boolean" minOccurs="0" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+            <xs:selector xpath=".//mstns:ATC_TipoUtente" />
+            <xs:field xpath="mstns:ID" />
+        </xs:unique>
+        <xs:unique name="dsUtentiKey3" msdata:PrimaryKey="true">
+            <xs:selector xpath=".//mstns:GruppiDiAppartenenza" />
+            <xs:field xpath="mstns:ID" />
+        </xs:unique>
+        <xs:unique name="ATC_Gruppi_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+            <xs:selector xpath=".//mstns:ATC_Gruppi" />
+            <xs:field xpath="mstns:ID" />
+        </xs:unique>
+        <xs:unique name="dsUtentiKey2" msdata:PrimaryKey="true">
+            <xs:selector xpath=".//mstns:UtentiDelGruppo" />
+            <xs:field xpath="mstns:ID" />
+        </xs:unique>
+        <xs:unique name="dsUtentiKey1" msdata:PrimaryKey="true">
+            <xs:selector xpath=".//mstns:GruppiDelModulo" />
+            <xs:field xpath="mstns:ID" />
+        </xs:unique>
+        <xs:unique name="dsUtentiKey4" msdata:PrimaryKey="true">
+            <xs:selector xpath=".//mstns:ATC_Utenti" />
+            <xs:field xpath="mstns:ID" />
+        </xs:unique>
+    </xs:element>
+</xs:schema>

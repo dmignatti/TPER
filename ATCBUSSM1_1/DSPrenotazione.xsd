@@ -1,0 +1,61 @@
+<?xml version="1.0" standalone="yes" ?>
+<xs:schema id="DSPrenotazione" targetNamespace="http://www.tempuri.org/DSPrenotazione.xsd"
+	xmlns:mstns="http://www.tempuri.org/DSPrenotazione.xsd" xmlns="http://www.tempuri.org/DSPrenotazione.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"
+	attributeFormDefault="qualified" elementFormDefault="qualified">
+	<xs:element name="DSPrenotazione" msdata:IsDataSet="true" msdata:Locale="it-IT">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Accertatori_PrenotazioneIntervalli">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" msdata:DataType="System.Guid, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+								type="xs:string" />
+							<xs:element name="Nome" type="xs:string" minOccurs="0" />
+							<xs:element name="Accertatori_PrenotazioniPeriodoId" msdata:DataType="System.Guid, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+								type="xs:string" minOccurs="0" />
+							<xs:element name="IntervalloDa" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="IntervalloA" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="MaxPrenotazione" type="xs:int" minOccurs="0" />
+							<xs:element name="ModifiedOn" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="CreatedBy" type="xs:string" minOccurs="0" />
+							<xs:element name="ModifiedBy" type="xs:string" minOccurs="0" />
+							<xs:element name="NumPrenotati" type="xs:int" minOccurs="0" />
+							<xs:element name="NumDisponibilita" type="xs:int" minOccurs="0" />
+							<xs:element name="UltimaPrenotazione" type="xs:dateTime" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Accertatori_PrenotazioniPeriodo">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" msdata:DataType="System.Guid, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+								type="xs:string" />
+							<xs:element name="Nome" type="xs:string" minOccurs="0" />
+							<xs:element name="Pubblicato" type="xs:boolean" minOccurs="0" />
+							<xs:element name="PrenotabileDa" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="PrenotabileDaOra" type="xs:int" minOccurs="0" />
+							<xs:element name="PrenotabileDaMinuti" type="xs:int" minOccurs="0" />
+							<xs:element name="PrenotabileA" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="PeriodoDa" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="PeriodoA" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="NumMaxIntervalli" type="xs:int" minOccurs="0" />
+							<xs:element name="ModifiedOn" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="CreatedBy" type="xs:string" minOccurs="0" />
+							<xs:element name="ModifiedBy" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="Constraint1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Accertatori_PrenotazioneIntervalli" />
+			<xs:field xpath="mstns:ID" />
+		</xs:unique>
+		<xs:unique name="Accertatori_PrenotazioniPeriodo_Constraint1" msdata:ConstraintName="Constraint1"
+			msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Accertatori_PrenotazioniPeriodo" />
+			<xs:field xpath="mstns:ID" />
+		</xs:unique>
+	</xs:element>
+</xs:schema>

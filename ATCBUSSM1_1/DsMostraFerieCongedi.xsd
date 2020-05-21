@@ -1,0 +1,48 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="DsMostraFerieCongedi" targetNamespace="http://www.tempuri.org/DsMostraFerieCongedi.xsd" xmlns:mstns="http://www.tempuri.org/DsMostraFerieCongedi.xsd" xmlns="http://www.tempuri.org/DsMostraFerieCongedi.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="DsMostraFerieCongedi" msdata:IsDataSet="true" msdata:Locale="it-IT">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="SP_PrenotazioniFerieCongedi_TBL">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="GIORNO" type="xs:string" />
+              <xs:element name="GIORNO_DRITTO" type="xs:string" />
+              <xs:element name="ListaUser" type="xs:string" minOccurs="0" />
+              <xs:element name="num" type="xs:int" minOccurs="0" />
+              <xs:element name="PosizioneSuccessiva" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+              <xs:element name="POSUSER" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+              <xs:element name="MAXUSER" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Table1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+              <xs:element name="CHIAVE" type="xs:string" />
+              <xs:element name="IDACCERTATORE" type="xs:string" />
+              <xs:element name="IDUSER" type="xs:string" />
+              <xs:element name="DATAEORA" type="xs:dateTime" />
+              <xs:element name="GIORNO" type="xs:string" />
+              <xs:element name="GIORNO_DRITTO" type="xs:string" />
+              <xs:element name="ListaUser" type="xs:string" minOccurs="0" />
+              <xs:element name="NUM" type="xs:int" minOccurs="0" />
+              <xs:element name="PosizioneSuccessiva" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+              <xs:element name="POSUSER" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+              <xs:element name="MAXUSER" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Table1" />
+      <xs:field xpath="mstns:id" />
+      <xs:field xpath="mstns:CHIAVE" />
+      <xs:field xpath="mstns:IDUSER" />
+      <xs:field xpath="mstns:DATAEORA" />
+      <xs:field xpath="mstns:GIORNO" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

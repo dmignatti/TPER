@@ -1,0 +1,82 @@
+<?xml version="1.0" standalone="yes" ?>
+<xs:schema id="dsVestizione" targetNamespace="http://www.tempuri.org/dsVestizione.xsd" xmlns:mstns="http://www.tempuri.org/dsVestizione.xsd"
+	xmlns="http://www.tempuri.org/dsVestizione.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+	<xs:element name="dsVestizione" msdata:IsDataSet="true" msdata:Locale="it-IT">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Accertatori">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Matricola" type="xs:decimal" />
+							<xs:element name="Data" type="xs:dateTime" />
+							<xs:element name="Turno" type="xs:decimal" minOccurs="0" />
+							<xs:element name="FlagAssenza" type="xs:boolean" minOccurs="0" />
+							<xs:element name="CognomeNome" type="xs:string" minOccurs="0" />
+							<xs:element name="CodiceGiustificativo" type="xs:string" minOccurs="0" />
+							<xs:element name="OraInizioGiustificativo" type="xs:decimal" minOccurs="0" />
+							<xs:element name="OraFineGiustificativo" type="xs:decimal" minOccurs="0" />
+							<xs:element name="TipoAssenza" type="xs:string" minOccurs="0" />
+							<xs:element name="CodiceGruppo" type="xs:string" minOccurs="0" />
+							<xs:element name="Gruppo" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Turni">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Turno" type="xs:decimal" />
+							<xs:element name="Data" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="CodiceTipologia" type="xs:string" minOccurs="0" />
+							<xs:element name="TipologiaTurno" type="xs:string" minOccurs="0" />
+							<xs:element name="Percorso" type="xs:string" minOccurs="0" />
+							<xs:element name="DescrizionePercorso" type="xs:string" minOccurs="0" />
+							<xs:element name="OrdineAssegnamento" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Nota" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Giustificativi">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Matricola" type="xs:decimal" />
+							<xs:element name="Data" type="xs:dateTime" />
+							<xs:element name="CodiceGiustificativo" type="xs:string" />
+							<xs:element name="OraInizioGiustificativo" type="xs:decimal" />
+							<xs:element name="OraFineGiustificativo" type="xs:decimal" minOccurs="0" />
+							<xs:element name="TipoAssenza" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="AccertatoriTurno">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Matricola" type="xs:decimal" />
+							<xs:element name="Data" type="xs:dateTime" />
+							<xs:element name="Turno" type="xs:decimal" minOccurs="0" />
+							<xs:element name="CognomeNome" type="xs:string" minOccurs="0" />
+							<xs:element name="CodiceGruppo" type="xs:string" minOccurs="0" />
+							<xs:element name="Gruppo" type="xs:string" minOccurs="0" />
+							<xs:element name="TipologiaTurno" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="Constraint1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Accertatori" />
+			<xs:field xpath="mstns:Matricola" />
+		</xs:unique>
+		<xs:unique name="dsVestizioneKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Turni" />
+			<xs:field xpath="mstns:Turno" />
+		</xs:unique>
+		<xs:unique name="Giustificativi_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Giustificativi" />
+			<xs:field xpath="mstns:Matricola" />
+			<xs:field xpath="mstns:Data" />
+			<xs:field xpath="mstns:CodiceGiustificativo" />
+			<xs:field xpath="mstns:OraInizioGiustificativo" />
+		</xs:unique>
+	</xs:element>
+</xs:schema>
